@@ -1,0 +1,108 @@
+.wrapper {
+  width: 100%;
+  background-color: white;
+  min-height: 50px;
+  font-family: OpenSans;
+  box-sizing: border-box;
+}
+.wrapper a {
+  text-decoration: none;
+}
+.wrapper .center {
+  max-width: 1120px;
+  min-width: 50px;
+  margin: 0 auto;
+}
+.wrapper header {
+  width: inherit;
+  min-height: 50px;
+  background-color: #ffffff;
+  box-shadow: inset 0 -20px 20px 1px #f7f7f7;
+}
+.wrapper header .center {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+}
+.wrapper header .center .logo {
+  margin: 17px 0 16px 50px;
+}
+.wrapper header .center .logo span {
+  display: block;
+  text-align: center;
+  font-family: "Century Gothic";
+  color: #696969;
+}
+.wrapper header .center .logo span:first-child {
+  font-size: 2.8em;
+  margin-bottom: 10px;
+}
+.wrapper header .center .logo span:nth-child(2) {
+  font-size: 1em;
+}
+.wrapper header .center nav ul li {
+  list-style: none;
+  display: inline-block;
+}
+.wrapper header .center nav ul li a {
+  font-family: "Century Gothic";
+  font-size: 1.4em;
+  margin: 0 12px;
+  cursor: pointer;
+  color: #606060;
+}
+.wrapper header .center nav ul li a:hover {
+  color: #eb9921;
+}
+.wrapper footer {
+  padding-top: 110px;
+}
+.wrapper footer .center {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.wrapper footer .center nav ul li {
+  margin-bottom: 20px;
+  list-style: none;
+}
+.wrapper footer .center nav ul li a {
+  font-size: 1.6em;
+  font-family: OpenSans-Semibold;
+  color: #666666;
+}
+.wrapper footer .center nav ul li a:hover {
+  color: #eb9921;
+}
+.wrapper footer .center .why-we {
+  max-width: 330px;
+  min-width: 280px;
+  width: 100%;
+}
+.wrapper footer .center .why-we span {
+  display: block;
+}
+.wrapper footer .center .why-we span:first-child {
+  font-size: 1.6em;
+  font-family: OpenSans-Semibold;
+  margin-bottom: 20px;
+  color: #606060;
+}
+.wrapper footer .center .why-we span:nth-child(2) {
+  line-height: 1.5;
+  font-size: 1.4em;
+  font-family: OpenSans-Light;
+}
+.wrapper footer .center .contact-us span {
+  display: block;
+  color: #606060;
+}
+.wrapper footer .center .contact-us .content-us-socialnet {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.wrapper footer .center .contact-us .content-us-socialnet a:first-child {
+  content: "";
+}
