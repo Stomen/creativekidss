@@ -111,7 +111,13 @@ function creativekids_scripts() {
 	wp_enqueue_style('my-reset-css');
 	wp_register_style('my-fonts-css', get_template_directory_uri() . '/css/fonts.css');
 	wp_enqueue_style('my-fonts-css');
+	wp_register_style('my-media-css', get_template_directory_uri() . '/css/media.css');
+	wp_enqueue_style('my-media-css');
+	
 
+
+
+	
 	wp_enqueue_script( 'creativekids-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
 	wp_enqueue_script( 'creativekids-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );

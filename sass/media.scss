@@ -1,0 +1,36 @@
+@media screen and (max-width: 768px){
+  html{
+    body{
+      .wrapper{
+        .center{
+          margin: 0 10px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 425px){
+  html{
+    body{
+      .wrapper{
+        header{
+          .center{
+            .logo{
+              margin-left: 25px;
+            }
+          }
+        }
+        footer{
+          .center{
+            nav{
+              margin-bottom: 20px;
+            }
+            .why-we{
+              margin-bottom: 25px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

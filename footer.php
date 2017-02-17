@@ -26,13 +26,16 @@
 					<span>Киев, ул. Павловская 46/11</span>
 					<span>© emiliareggiokids</span>
 					<form action="">
-						<lable for="email"></lable>
-						<input type="email" id="email" placeholder="Email">
-						<input type="submit">
+						<label for="email">подписаться на новости:</label>
+						<div class="footer-form-search">
+							<input type="email" id="email" placeholder="Email">
+							<input type="submit" value="">
+						</div>
 					</form>
 				</div>
 			</div>
 		</footer>
 	</div>
+		<?php wp_footer(); ?>
 </body>
 </html>

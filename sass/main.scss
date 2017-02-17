@@ -61,11 +61,13 @@
 
 
   footer{
-    padding-top: 110px;
+    padding: 100px 0;
+    box-shadow: 0 -20px 20px 1px rgba(247,247,247,247);
     .center{
       display: flex;
       flex-direction: row;
       justify-content: space-around;
+      flex-wrap: wrap;
       nav{
         ul{
           li{
@@ -105,19 +107,106 @@
         span{
           display: block;
           color: #606060;
+          margin-bottom: 15px;
+          font-family: OpenSans-Semibold;
+          font-size: 1.4em;
+          padding-left: 30px;
+          &:first-child{
+            font-size: 1.6em;
+            margin-bottom: 20px;
+            padding-left: 0;
+          }
+          &:nth-child(3){
+            background: 5px url("../assets/img/ico-tel.png") no-repeat;
+            height: 17px;
+          }
+          &:nth-child(4){
+            background: 5px url("../assets/img/ico-letter.png") no-repeat;
+            height: 14px;
+          }
+          &:nth-child(5){
+            background: 5px url("../assets/img/ico-point.png") no-repeat;
+            height: 23px;
+            padding-top: 6px;
+          }
         }
         .content-us-socialnet{
           display: flex;
           flex-direction: row;
-          justify-content: space-around;
+          justify-content: flex-start;
+          margin-bottom: 25px;
           a{
+            content: "";
+            display: block;
+            width: 42px;
+            height: 42px;
+            margin-right: 13px;
             &:first-child{
-              content: "";
-
+              background: url("../assets/img/facebook_1.png") no-repeat;
+              background-size: contain;
+              &:hover{
+                background: url("../assets/img/facebook.png") no-repeat;
+                background-size: contain;
+              }
+            }
+            &:nth-child(2){
+              background: url("../assets/img/inst_1.png") no-repeat;
+              background-size: contain;
+              &:hover{
+                background: url("../assets/img/inst.png") no-repeat;
+                background-size: contain;
+              }
+            }
+            &:nth-child(3){
+              background: url("../assets/img/pint_1.png") no-repeat;
+              background-size: contain;
+              &:hover{
+                background: url("../assets/img/pint.png") no-repeat;
+                background-size: contain;
+              }
+            }
+            &:nth-child(4){
+              background: url("../assets/img/youtube_1.png") no-repeat;
+              background-size: contain;
+              &:hover{
+                background: url("../assets/img/youtube.png") no-repeat;
+                background-size: contain;
+              }
             }
           }
         }
-      }
+        form{
+          label{
+            display: block;
+            font-family: OpenSans-Semibold;
+            font-size: 1.4em;
+            color: #eb9921;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+          }
+          .footer-form-search{
+            border-bottom: 2px solid #eb9921;
+            padding-bottom: 5px;
+          }
+          input[type="email"]{
+            outline: none;
+            border: none;
+            width: 80%;
+            font-family: OpenSans;
+            font-size: 1.4em;
+            vertical-align: middle;
+          }
+          input[type="submit"]{
+            border: none;
+            width: 15%;
+            background: transparent url("../assets/img/arrow.png") no-repeat 50% 50%;
+            outline: none;
+            cursor: pointer;
+          }
+        }
+
+        }
+
     }
   }
 }

@@ -56,12 +56,14 @@
   color: #eb9921;
 }
 .wrapper footer {
-  padding-top: 110px;
+  padding: 100px 0;
+  box-shadow: 0 -20px 20px 1px #f7f7f7;
 }
 .wrapper footer .center {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 .wrapper footer .center nav ul li {
   margin-bottom: 20px;
@@ -97,12 +99,98 @@
 .wrapper footer .center .contact-us span {
   display: block;
   color: #606060;
+  margin-bottom: 15px;
+  font-family: OpenSans-Semibold;
+  font-size: 1.4em;
+  padding-left: 30px;
+}
+.wrapper footer .center .contact-us span:first-child {
+  font-size: 1.6em;
+  margin-bottom: 20px;
+  padding-left: 0;
+}
+.wrapper footer .center .contact-us span:nth-child(3) {
+  background: 5px url("../assets/img/ico-tel.png") no-repeat;
+  height: 17px;
+}
+.wrapper footer .center .contact-us span:nth-child(4) {
+  background: 5px url("../assets/img/ico-letter.png") no-repeat;
+  height: 14px;
+}
+.wrapper footer .center .contact-us span:nth-child(5) {
+  background: 5px url("../assets/img/ico-point.png") no-repeat;
+  height: 23px;
+  padding-top: 6px;
 }
 .wrapper footer .center .contact-us .content-us-socialnet {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: flex-start;
+  margin-bottom: 25px;
+}
+.wrapper footer .center .contact-us .content-us-socialnet a {
+  content: "";
+  display: block;
+  width: 42px;
+  height: 42px;
+  margin-right: 13px;
 }
 .wrapper footer .center .contact-us .content-us-socialnet a:first-child {
-  content: "";
+  background: url("../assets/img/facebook_1.png") no-repeat;
+  background-size: contain;
+}
+.wrapper footer .center .contact-us .content-us-socialnet a:first-child:hover {
+  background: url("../assets/img/facebook.png") no-repeat;
+  background-size: contain;
+}
+.wrapper footer .center .contact-us .content-us-socialnet a:nth-child(2) {
+  background: url("../assets/img/inst_1.png") no-repeat;
+  background-size: contain;
+}
+.wrapper footer .center .contact-us .content-us-socialnet a:nth-child(2):hover {
+  background: url("../assets/img/inst.png") no-repeat;
+  background-size: contain;
+}
+.wrapper footer .center .contact-us .content-us-socialnet a:nth-child(3) {
+  background: url("../assets/img/pint_1.png") no-repeat;
+  background-size: contain;
+}
+.wrapper footer .center .contact-us .content-us-socialnet a:nth-child(3):hover {
+  background: url("../assets/img/pint.png") no-repeat;
+  background-size: contain;
+}
+.wrapper footer .center .contact-us .content-us-socialnet a:nth-child(4) {
+  background: url("../assets/img/youtube_1.png") no-repeat;
+  background-size: contain;
+}
+.wrapper footer .center .contact-us .content-us-socialnet a:nth-child(4):hover {
+  background: url("../assets/img/youtube.png") no-repeat;
+  background-size: contain;
+}
+.wrapper footer .center .contact-us form label {
+  display: block;
+  font-family: OpenSans-Semibold;
+  font-size: 1.4em;
+  color: #eb9921;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.wrapper footer .center .contact-us form .footer-form-search {
+  border-bottom: 2px solid #eb9921;
+  padding-bottom: 5px;
+}
+.wrapper footer .center .contact-us form input[type="email"] {
+  outline: none;
+  border: none;
+  width: 80%;
+  font-family: OpenSans;
+  font-size: 1.4em;
+  vertical-align: middle;
+}
+.wrapper footer .center .contact-us form input[type="submit"] {
+  border: none;
+  width: 15%;
+  background: transparent url("../assets/img/arrow.png") no-repeat 50% 50%;
+  outline: none;
+  cursor: pointer;
 }
