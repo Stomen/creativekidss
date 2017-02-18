@@ -1,38 +1,40 @@
-<?php
-/**
- * The template for displaying all pages
- *
- * This is the template that displays all pages by default.
- * Please note that this is the WordPress construct of pages
- * and that other 'pages' on your WordPress site may use a
- * different template.
- *
- * @link https://codex.wordpress.org/Template_Hierarchy
- *
- * @package CreativeKids
- */
-
-get_header(); ?>
-
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
-
-			<?php
-			while ( have_posts() ) : the_post();
-
-				get_template_part( 'template-parts/content', 'page' );
-
-				// If comments are open or we have at least one comment, load up the comment template.
-				if ( comments_open() || get_comments_number() ) :
-					comments_template();
-				endif;
-
-			endwhile; // End of the loop.
-			?>
-
-		</main><!-- #main -->
-	</div><!-- #primary -->
-
-<?php
-get_sidebar();
-get_footer();
+<?php get_header(); ?>
+<main>
+	<div class="main-slider">
+		<div class="center">
+			<div class="main-slider-slide">
+				<div class="main-slider-photo"></div>
+				<span>Creative Kids - это вдохновляющий билингвальный частный детский сад и творческое
+				ателье “Yellow Bird” с самыми разными студиями для детей.</span>
+			</div>
+			<div class="main-slider-slide">
+				<div class="main-slider-photo"></div>
+				<span>Creative Kids - это вдохновляющий билингвальный частный детский сад и творческое
+				ателье “Yellow Bird” с самыми разными студиями для детей.</span>
+			</div>
+			<div class="main-slider-slide">
+				<div class="main-slider-photo"></div>
+				<span>Creative Kids - это вдохновляющий билингвальный частный детский сад и творческое
+				ателье “Yellow Bird” с самыми разными студиями для детей.</span>
+			</div>
+			<div class="main-slider-slide">
+				<div class="main-slider-photo"></div>
+				<span>Creative Kids - это вдохновляющий билингвальный частный детский сад и творческое
+				ателье “Yellow Bird” с самыми разными студиями для детей.</span>
+			</div>
+		</div>
+	</div>
+	<div class="request-buttons">
+		<div class="request-link1">
+			<div class="request-link">
+				<span>Частный детский сад</span>
+			</div>
+		</div>
+		<div class="request-link2">
+			<div class="request-link">
+				<span>Творческое Ателье “Yellow Bird”</span>
+			</div>
+		</div>
+	</div>
+</main>
+<?php get_footer();?>

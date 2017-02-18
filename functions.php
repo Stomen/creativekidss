@@ -113,9 +113,16 @@ function creativekids_scripts() {
 	wp_enqueue_style('my-fonts-css');
 	wp_register_style('my-media-css', get_template_directory_uri() . '/css/media.css');
 	wp_enqueue_style('my-media-css');
-	
+	wp_register_style('slick-css', get_template_directory_uri() . '/slick/slick/slick.css');
+	wp_enqueue_style('slick-css');
+	wp_register_style('slick-theme-css', get_template_directory_uri() . '/slick/slick/slick-theme.css');
+	wp_enqueue_style('slick-theme-css');
 
 
+	wp_enqueue_script( 'creativekids-jquery', '//code.jquery.com/jquery-migrate-1.2.1.min.js', array(), '20151215', true );
+	wp_enqueue_script( 'creativekids-jquery-migr', '//code.jquery.com/jquery-1.11.0.min.js', array(), '20151215', true );
+	wp_enqueue_script( 'creativekids-slick', get_template_directory_uri() . '/slick/slick/slick.min.js', array(), '20151215', true );
+	wp_enqueue_script( 'creativekids-slick-js', get_template_directory_uri() . '/js/slick_slider.js', array(), '20151215', true );
 
 	
 	wp_enqueue_script( 'creativekids-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );

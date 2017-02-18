@@ -31,6 +31,24 @@
           }
         }
       }
+      main{
+        .request-buttons{
+          .request-link1{
+            .request-link{
+              span{
+                margin-right: 0;
+              }
+            }
+          }
+          .request-link2{
+            .request-link{
+              span{
+                margin-left: 0;
+              }
+            }
+          }
+        }
+      }
     }
   }
 }

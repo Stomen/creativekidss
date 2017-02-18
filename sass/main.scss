@@ -58,7 +58,87 @@
       }
     }
   }
-
+  main{
+    width: inherit;
+    min-height: 50px;
+    .main-slider{
+      min-height: 50px;
+      padding-bottom: 25px;
+      .center{
+        .main-slider-slide{
+          min-height: 50px;
+          text-align: center;
+          padding: 45px 0 25px 0;
+          margin: 0 auto;
+          .main-slider-photo{
+            background: url("../assets/img/logo1.png") no-repeat;
+            width: 297px;
+            height: 327px;
+            background-size: contain;
+            margin: 0 auto;
+          }
+          span{
+            box-sizing: border-box;
+            display: block;
+            font-family: OpenSans-Light;
+            font-size: 1.6em;
+            max-width: 690px;
+            min-width: 280px;
+            width: 100%;
+            margin: 15px auto 0 auto;
+            padding-left: 5px;
+            padding-top: 15px;
+            background: url("../assets/img/lines.png") no-repeat;
+            line-height: 1.5;
+          }
+        }
+      }
+    }
+    .request-buttons{
+      display: flex;
+      flex-direction: row;
+      width: inherit;
+        span{
+          font-family: OpenSans-Light;
+          font-size: 2.1em;
+          display: inline-block;
+          max-width: 200px;
+          min-width: 75px;
+          width: 100%;
+          text-align: center;
+          line-height: 1.5;
+          padding: 13px 0 18px 0;
+          color: white;
+        }
+      .request-link{
+        border-radius: 5px;
+        height: 100%;
+        border: 2px dashed transparent;
+        cursor: pointer;
+        &:hover{
+          border: 2px dashed white;
+        }
+      }
+      .request-link1{
+        background: #d14d51;
+        width: 50%;
+        padding: 12px;
+        text-align: right;
+        span{
+          margin-right: 20%;
+        }
+      }
+      .request-link2{
+        background: #eb9921;
+        width: 50%;
+        padding: 12px;
+        text-align: left;
+        span{
+          margin-left: 20%;
+        }
+      }
+    }
+  }
 
   footer{
     padding: 100px 0;

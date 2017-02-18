@@ -1,0 +1,22 @@
+@media screen and (max-width: 768px) {
+  html body .wrapper .center {
+    margin: 0 10px;
+  }
+}
+@media screen and (max-width: 425px) {
+  html body .wrapper header .center .logo {
+    margin-left: 25px;
+  }
+  html body .wrapper footer .center nav {
+    margin-bottom: 20px;
+  }
+  html body .wrapper footer .center .why-we {
+    margin-bottom: 25px;
+  }
+  html body main .request-buttons .request-link1 .request-link span {
+    margin-right: 0;
+  }
+  html body main .request-buttons .request-link2 .request-link span {
+    margin-left: 0;
+  }
+}
