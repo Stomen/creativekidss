@@ -2,6 +2,9 @@
   html body .wrapper .center {
     margin: 0 10px;
   }
+  html body .wrapper header .center nav {
+    display: none;
+  }
 }
 @media screen and (max-width: 425px) {
   html body .wrapper header .center .logo {

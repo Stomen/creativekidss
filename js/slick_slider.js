@@ -12,4 +12,30 @@ $(document).ready(function(){
         speed: 2000,
         dots: true,
 });
+    $('.photo-gallery-slider').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        infinite: true,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        accessibility:false,
+        arrows: false,
+        speed: 2000,
+        responsive: [
+            {
+                breakpoint: 769,
+                settings: {
+                    arrows: false,
+                    slidesToShow: 2
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    arrows: false,
+                    slidesToShow: 1
+                }
+            }
+        ]
+    });
 });

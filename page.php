@@ -81,5 +81,55 @@
 			</div>
 		</div>
 	</div>
+	<div class="mission">
+		<div class="center">
+			<div class="title-block">
+				<span>Наша миссия</span>
+			</div>
+			<span>Мы создаем будущее, в котором у наших малышей есть все навыки, умения и знания для того, чтобы
+					стать успешными в стремительно меняющемся мире, делать то, что они любят и любить то, что они
+					делают.</span>
+			<div class="mission-items">
+				<div class="mission-item">
+					<span>“Есть две важные вещи, которые мы
+							можем передать нашим детям. Одна
+							из них корни, другая –  Крылья.”</span>
+					<span>Ходдинг Картер</span>
+				</div>
+				<div class="mission-item">
+					<span>“Способности могут не проявляться до
+							тех пор, пока не создадутся подходящие
+							 возможности для их реализации.”</span>
+					<span>Сэр Кэн Робинсон</span>
+				</div>
+				<div class="mission-item">
+					<span>“Знание может привести из пункта
+						А в пункт Б, а воображение куда
+						угодно.”</span>
+					<span>Альберт Эйнштейн</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="photo-gallery">
+		<div class="center">
+			<div class="title-block">
+				<span>Фотогалерея</span>
+			</div>
+					<span>У нас случаются удивительные вещи, придумываются оригинальные идеи, воплощаются невероятные детские мечты.
+						Мы крепко дружим, много играем, свободно творим и экспериментируем, каждый день делаем маленькие открытия и раскрываем
+						большие таланты. А еще у нас умиротворенно, радостно и душевно.
+					</span>
+			<div class="photo-gallery-slider">
+				<div class="photo-gallery-item"></div>
+				<div class="photo-gallery-item"></div>
+				<div class="photo-gallery-item"></div>
+				<div class="photo-gallery-item"></div>
+				<div class="photo-gallery-item"></div>
+				<div class="photo-gallery-item"></div>
+			</div>
+			<button>Другие фотографии</button>
+		</div>
+	</div>
 </main>
 <?php get_footer();?>

@@ -1,9 +1,36 @@
+@media screen and (max-width: 1024px){
+  html{
+    body{
+      .wrapper{
+        header{
+          .center{
+            .logo{
+              span{
+                &:first-child{
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
 @media screen and (max-width: 768px){
   html{
     body{
       .wrapper{
         .center{
           margin: 0 10px;
+        }
+        header{
+          .center{
+
+              nav{
+                display: none;
+              }
+
+          }
         }
       }
     }

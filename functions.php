@@ -124,6 +124,7 @@ function creativekids_scripts() {
 	wp_enqueue_script( 'creativekids-slick', get_template_directory_uri() . '/slick/slick/slick.min.js', array(), '20151215', true );
 	wp_enqueue_script( 'creativekids-slick-js', get_template_directory_uri() . '/js/slick_slider.js', array(), '20151215', true );
 
+
 	
 	wp_enqueue_script( 'creativekids-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 

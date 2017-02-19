@@ -17,7 +17,7 @@
   width: inherit;
   min-height: 50px;
   background-color: #ffffff;
-  box-shadow: inset 0 -20px 20px 1px #f7f7f7;
+  box-shadow: inset 0 -11px 20px 0px #f7f7f7;
 }
 .wrapper header .center {
   display: flex;
@@ -193,6 +193,101 @@
 .wrapper main .our-principles .our-principles-block .our-principles-item9 {
   background: center 20px url("../assets/img/p_item9.png") no-repeat;
 }
+.wrapper main .mission {
+  box-shadow: 0px -11px 20px 0px #f7f7f7;
+}
+.wrapper main .mission .center span {
+  max-width: 680px;
+  min-width: 280px;
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  font-family: OpenSans-Light;
+  font-size: 1.4em;
+  line-height: 1.5;
+}
+.wrapper main .mission .center .mission-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  margin: 80px 0 50px 0;
+}
+.wrapper main .mission .center .mission-items .mission-item {
+  margin-bottom: 30px;
+}
+.wrapper main .mission .center .mission-items .mission-item span {
+  display: block;
+  font-size: 1.4em;
+  padding-left: 60px;
+  max-width: 315px;
+  min-width: 310px;
+  width: 100%;
+  box-sizing: border-box;
+}
+.wrapper main .mission .center .mission-items .mission-item span:first-child {
+  font-family: OpenSans-Light;
+  background: left 5px url("../assets/img/quotes.png") no-repeat;
+  width: 50px;
+  min-height: 38px;
+}
+.wrapper main .mission .center .mission-items .mission-item span:nth-child(2) {
+  font-family: OpenSans-Semibold;
+  margin-top: 30px;
+}
+.wrapper main .photo-gallery {
+  box-shadow: inset 0 20px 20px 1px #f7f7f7;
+  width: inherit;
+  min-height: 50px;
+  padding-bottom: 70px;
+}
+.wrapper main .photo-gallery .center {
+  text-align: center;
+}
+.wrapper main .photo-gallery .center span {
+  max-width: 970px;
+  min-width: 280px;
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  font-family: OpenSans-Light;
+  font-size: 1.4em;
+  line-height: 1.5;
+}
+.wrapper main .photo-gallery .center .photo-gallery-slider {
+  margin: 60px 0;
+  min-height: 50px;
+  width: inherit;
+  display: flex;
+  justify-content: center;
+}
+.wrapper main .photo-gallery .center .photo-gallery-slider .photo-gallery-item {
+  background: center url("../assets/img/galery-item.png") no-repeat;
+  background-size: cover;
+  width: 348px;
+  height: 226px;
+  border: 6px solid white;
+  box-shadow: 0 0 15px 0 rgba(50, 50, 50, 0.5);
+  margin: 10px;
+  cursor: pointer;
+}
+.wrapper main .photo-gallery .center button {
+  background: #eb9921;
+  border: none;
+  width: 255px;
+  height: 45px;
+  border-radius: 18px;
+  font-family: OpenSans;
+  font-size: 1.8em;
+  color: white;
+  cursor: pointer;
+}
+.wrapper main .photo-gallery .center button:hover {
+  background: #eb8224;
+}
 .wrapper main .center .title-block {
   text-align: center;
   padding: 50px 0 35px 0;
@@ -204,7 +299,7 @@
 }
 .wrapper footer {
   padding: 100px 0;
-  box-shadow: 0 -20px 20px 1px #f7f7f7;
+  box-shadow: 0 -11px 20px 1px #f7f7f7;
 }
 .wrapper footer .center {
   display: flex;
