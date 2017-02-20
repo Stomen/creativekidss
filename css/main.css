@@ -59,6 +59,15 @@
   width: inherit;
   min-height: 50px;
 }
+.wrapper main .center .title-block {
+  text-align: center;
+  padding: 50px 0 35px 0;
+}
+.wrapper main .center .title-block span {
+  font-family: OpenSans-Light;
+  font-size: 3em;
+  color: #5e5e5e;
+}
 .wrapper main .main-slider {
   min-height: 50px;
   padding-bottom: 25px;
@@ -69,12 +78,21 @@
   padding: 45px 0 25px 0;
   margin: 0 auto;
 }
+.wrapper main .main-slider .center .main-slider-slide.gallery-block span {
+  max-width: 930px;
+}
 .wrapper main .main-slider .center .main-slider-slide .main-slider-photo {
   background: url("../assets/img/logo1.png") no-repeat;
   width: 297px;
   height: 327px;
   background-size: contain;
   margin: 0 auto;
+}
+.wrapper main .main-slider .center .main-slider-slide .main-slider-photo.gallery-block-photo {
+  background: url("../assets/img/gallery.png") no-repeat;
+  background-size: contain;
+  width: 329px;
+  height: 226px;
 }
 .wrapper main .main-slider .center .main-slider-slide span {
   box-sizing: border-box;
@@ -258,21 +276,50 @@
   line-height: 1.5;
 }
 .wrapper main .photo-gallery .center .photo-gallery-slider {
-  margin: 60px 0;
+  width: 95%;
+  margin: 60px auto;
   min-height: 50px;
-  width: inherit;
   display: flex;
   justify-content: center;
 }
 .wrapper main .photo-gallery .center .photo-gallery-slider .photo-gallery-item {
   background: center url("../assets/img/galery-item.png") no-repeat;
-  background-size: cover;
-  width: 348px;
+  width: 328px;
   height: 226px;
   border: 6px solid white;
   box-shadow: 0 0 15px 0 rgba(50, 50, 50, 0.5);
   margin: 10px;
   cursor: pointer;
+}
+.wrapper main .photo-gallery .center .photo-gallery-slider .slick-arrow {
+  width: 57px;
+  height: 57px;
+  background: white;
+  border-radius: 0;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+  z-index: 100;
+}
+.wrapper main .photo-gallery .center .photo-gallery-slider .slick-next:before {
+  content: ">";
+  display: block;
+  color: #5e5e5e;
+  font-size: 2em;
+  margin: 0 auto;
+  padding-bottom: 5px;
+}
+.wrapper main .photo-gallery .center .photo-gallery-slider .slick-prev {
+  content: "";
+}
+.wrapper main .photo-gallery .center .photo-gallery-slider .slick-prev:before {
+  content: "<";
+  display: block;
+  color: #5e5e5e;
+  font-size: 2em;
+  margin: 0 auto;
+  padding-bottom: 5px;
+}
+.wrapper main .photo-gallery .center .photo-gallery-slider.gallery-block-slider {
+  margin: 15px auto 0 auto;
 }
 .wrapper main .photo-gallery .center button {
   background: #eb9921;
@@ -284,18 +331,43 @@
   font-size: 1.8em;
   color: white;
   cursor: pointer;
+  outline: none;
 }
 .wrapper main .photo-gallery .center button:hover {
   background: #eb8224;
 }
-.wrapper main .center .title-block {
-  text-align: center;
-  padding: 50px 0 35px 0;
+.wrapper main .photo-gallery .center button.gallery-button {
+  margin-top: 60px;
 }
-.wrapper main .center .title-block span {
+.wrapper main .about-quote {
+  width: inherit;
+  min-height: 50px;
+}
+.wrapper main .about-quote .center .about-quote-photo {
+  background: url("../assets/img/about-kids.png") no-repeat;
+  max-width: 348px;
+  height: 230px;
+  background-size: contain;
+  margin: 20px auto 50px auto;
+}
+.wrapper main .about-quote .center span {
   font-family: OpenSans-Light;
-  font-size: 3em;
-  color: #5e5e5e;
+  font-size: 1.6em;
+  line-height: 1.5;
+}
+.wrapper main .about-quote .center span:nth-child(2) {
+  display: block;
+  max-width: 770px;
+  min-height: 38px;
+  margin: 0 auto;
+  padding: 25px 0 0 60px;
+  background: top left url("../assets/img/quotes.png") no-repeat;
+}
+.wrapper main .about-quote .center span:nth-child(3) {
+  display: block;
+  text-align: right;
+  margin-right: 10%;
+  padding-top: 10px;
 }
 .wrapper footer {
   padding: 100px 0;
@@ -420,6 +492,14 @@
 .wrapper footer .center .contact-us form .footer-form-search {
   border-bottom: 2px solid #eb9921;
   padding-bottom: 5px;
+}
+.wrapper footer .center .contact-us form input[type="email"] {
+  outline: none;
+  border: none;
+  width: 80%;
+  font-family: OpenSans;
+  font-size: 1.4em;
+  vertical-align: middle;
 }
 .wrapper footer .center .contact-us form input[type="email"] {
   outline: none;

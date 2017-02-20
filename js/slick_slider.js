@@ -19,7 +19,7 @@ $(document).ready(function(){
         autoplay: true,
         autoplaySpeed: 2000,
         accessibility:false,
-        arrows: false,
+        arrows: true,
         speed: 2000,
         responsive: [
             {

@@ -1,21 +1,3 @@
-@media screen and (max-width: 1024px){
-  html{
-    body{
-      .wrapper{
-        header{
-          .center{
-            .logo{
-              span{
-                &:first-child{
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-}
 @media screen and (max-width: 768px){
   html{
     body{
@@ -25,11 +7,9 @@
         }
         header{
           .center{
-
               nav{
                 display: none;
               }
-
           }
         }
       }

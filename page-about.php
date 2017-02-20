@@ -1,38 +1,46 @@
-<?php
-/**
- * The template for displaying all pages
- *
- * This is the template that displays all pages by default.
- * Please note that this is the WordPress construct of pages
- * and that other 'pages' on your WordPress site may use a
- * different template.
- *
- * @link https://codex.wordpress.org/Template_Hierarchy
- *
- * @package CreativeKids
- */
-
-get_header(); ?>
-
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
-
-			<?php
-			while ( have_posts() ) : the_post();
-
-				get_template_part( 'template-parts/content', 'page' );
-
-				// If comments are open or we have at least one comment, load up the comment template.
-				if ( comments_open() || get_comments_number() ) :
-					comments_template();
-				endif;
-
-			endwhile; // End of the loop.
-			?>
-
-		</main><!-- #main -->
-	</div><!-- #primary -->
-
-<?php
-get_sidebar();
-get_footer();
+<?php get_header(); ?>
+<main>
+	<div class="about-quote">
+		<div class="center">
+			<div class="about-quote-photo"></div>
+				<span>Наша задача - помочь каждому ребёнку взобраться, как можно выше на его собственную гору </span>
+				<span>Лорис Малагуцци</span>
+			</div>
+	</div>
+	<div class="about-description">
+		<div class="center">
+			<p>Наш детский садик Creative Kids в Киеве – вдохновляющее, счастливое, креативное и комфортное <a href="">Рэджио-пространство</a>. </p>
+			<p>У нас нет «обычных» занятий. Мы наряжаемся в самых фантазийных героев, рисуем на стенах, читаем интересные книги, создаем свои шедевры, поем
+				цифры и выпекаем буквы, устраиваем танцевальные импровизации и искренне радуемся детству.</p>
+			<p>У нас много света, цветов, растений и природных материалов, потому что мы верим в важность связи с природой. Мы любим гулять, устраивать пикники,
+				экспедиции, играть в искалки и находилки.</p>
+			<p>Как и в Монтессори, наша среда является третьим учителем, но предоставляет гораздо больше возможностей для творчества и экспериментов. Мы
+				подумали над каждой деталью, чтобы вызывать любопытство, поощрять интерес к познанию и общению у наших деток.
+			</p>
+			<div class="about-description-photos">
+				<div class="about-description-photo"></div>
+				<div class="about-description-photo"></div>
+			</div>
+			<p>В Creative Kids мы говорим на трех языках: русском, украинском и английском с native speakers. </p>
+			<p>Мы не ограничиваем детей категорией одного возраста. Мы учимся друг у друга и пробуем себя в разных ролях. Каждую группу вдохновляют и лелеют не
+				просто профессионалы, а настоящие <a href="">Музы</a>. </p>
+			<p>Английский вокал, актерское мастерство, хореографические импровизации, эйдетику и ТРИЗ приезжают вести выдающиеся
+				<a href="">Мастера</a>. В нашем уникальном <a href="">Творческом ателье “Yellow Bird”</a>  (внутрення ссылка) с детками творит и креативит талантливый Ательериста.</p>
+			<p>Наше пространство умеет говорить. Каждый день оно уверенно заявляет: «Ты креативный и способный ребенок. В тебя верят, тебя любят и тебе доверяют»</p>
+			<div class="about-description-letter"></div>
+		</div>
+	</div>
+	<div class="about-feedback">
+		<div class="center">
+			<span>Ждём вас в гости!</span>
+			<span>Мы свяжемся с Вами в ближайшее время и все подробно расскажем</span>
+			<form action="">
+				<input type="text">
+				<input type="email">
+				<input type="tel">
+				<input type="submit">
+			</form>
+		</div>
+	</div>
+</main>
+<?php get_footer(); ?>
