@@ -61,17 +61,6 @@
   main{
     width: inherit;
     min-height: 50px;
-    .center{
-      .title-block{
-        text-align: center;
-        padding: 50px 0 35px 0;
-        span{
-          font-family: OpenSans-Light;
-          font-size: 3em;
-          color: #5e5e5e;
-        }
-      }
-    }
     .main-slider{
       min-height: 50px;
       padding-bottom: 25px;
@@ -162,7 +151,7 @@
       }
     }
     .our-principles{
-      box-shadow:inset 0 20px 20px 1px rgba(247,247,247,247);
+      box-shadow:inset 0 20px 20px 1px rgb(247,247,247);
       padding-bottom: 20px;
       .our-principles-block{
         display: flex;
@@ -361,6 +350,7 @@
     .about-quote{
       width: inherit;
       min-height: 50px;
+      padding-bottom: 90px;
       .center{
         .about-quote-photo{
           background: url("../assets/img/about-kids.png") no-repeat;
@@ -390,7 +380,111 @@
         }
       }
     }
+    .about-description{
+      box-shadow:inset 0 20px 20px 1px rgb(247,247,247);
+      padding-top: 70px;
+      .center{
+        p{
+          margin-bottom: 30px;
+          font-family: OpenSans-Light;
+          font-size: 1.4em;
+          line-height: 1.5;
+          color: #606060;
+          text-align: left;
+          a{
+            color: #eb9921;
+          }
+        }
+        .about-description-photos{
+          min-height: 50px;
+          display: flex;
+          justify-content: center;
+          flex-wrap: wrap;
+          text-align: center;
+          padding: 20px 0 45px 0;
+          .about-description-photo{
+            background: center url("../assets/img/desc1.png") no-repeat;
+            width: 488px;
+            height: 354px;
+            border: 6px solid white;
+            box-shadow: 0 0 15px 0 rgba(50, 50, 50, 0.5);
+            margin: 10px;
+          }
+        }
+        text-align: center;
+        img{
+          text-align: center;
+          margin: 0 0 30px 0;
+        }
+      }
 
+    }
+    .about-feedback{
+      width: inherit;
+      min-height: 50px;
+      padding: 30px 0 70px 0;
+      .center{
+        span{
+          font-family: OpenSans-Light;
+          font-size: 1.6em;
+          display: block;
+          text-align: center;
+          &:first-child{
+            margin-bottom: 10px;
+           }
+        }
+        form{
+          width: 100%;
+          padding-top: 55px;
+          input{
+            display: block;
+            width: 220px;
+            margin: 16px auto 0 auto;
+            outline: none;
+            border: none;
+            font-family: OpenSans;
+            padding: 7px 3px;
+            &[type="text"]{
+              border-bottom: 1px solid #f9bf3a;
+              font-size: 1.4em;
+            }
+            &[type="email"]{
+              border-bottom: 1px solid #f9bf3a;
+              font-size: 1.4em;
+            }
+            &[type="tel"]{
+              border-bottom: 1px solid #f9bf3a;
+              font-size: 1.4em;
+            }
+            &[type="submit"]{
+              padding: 0;
+              margin-top: 40px;
+              background: #eb9921;
+              width: 255px;
+              height: 45px;
+              border-radius: 18px;
+              font-size: 1.8em;
+              color: white;
+              cursor: pointer;
+              &:hover{
+                background: #eb8224;
+              }
+            }
+          }
+        }
+      }
+    }
+    .center{
+      .title-block{
+        text-align: center;
+        padding: 50px 0 35px 0;
+        span{
+          font-family: OpenSans-Light;
+          font-size: 3em;
+          color: #5e5e5e;
+        }
+      }
+    }
   }
   footer{
     padding: 100px 0;

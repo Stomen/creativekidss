@@ -27,7 +27,7 @@
 			<p>Английский вокал, актерское мастерство, хореографические импровизации, эйдетику и ТРИЗ приезжают вести выдающиеся
 				<a href="">Мастера</a>. В нашем уникальном <a href="">Творческом ателье “Yellow Bird”</a>  (внутрення ссылка) с детками творит и креативит талантливый Ательериста.</p>
 			<p>Наше пространство умеет говорить. Каждый день оно уверенно заявляет: «Ты креативный и способный ребенок. В тебя верят, тебя любят и тебе доверяют»</p>
-			<div class="about-description-letter"></div>
+			<img src="<?php echo get_template_directory_uri();?> /assets/img/envelope-animation.gif" alt="Конверт">
 		</div>
 	</div>
 	<div class="about-feedback">
@@ -35,9 +35,9 @@
 			<span>Ждём вас в гости!</span>
 			<span>Мы свяжемся с Вами в ближайшее время и все подробно расскажем</span>
 			<form action="">
-				<input type="text">
-				<input type="email">
-				<input type="tel">
+				<input type="text" placeholder="Имя*" required>
+				<input type="email" placeholder="Email*" required>
+				<input type="tel" placeholder="Телефон">
 				<input type="submit">
 			</form>
 		</div>
