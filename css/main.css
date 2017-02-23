@@ -12,6 +12,7 @@
   max-width: 1120px;
   min-width: 50px;
   margin: 0 auto;
+  padding: 0 10px;
 }
 .wrapper header {
   width: inherit;
@@ -82,7 +83,9 @@
 .wrapper main .main-slider .center .main-slider-slide .main-slider-photo.gallery-block-photo {
   background: url("../assets/img/gallery.png") no-repeat;
   background-size: contain;
-  width: 329px;
+  max-width: 329px;
+  min-width: 280px;
+  width: 100%;
   height: 226px;
 }
 .wrapper main .main-slider .center .main-slider-slide span {
@@ -451,6 +454,348 @@
 }
 .wrapper main .about-feedback .center form input[type="submit"]:hover {
   background: #eb8224;
+}
+.wrapper main .reggio-emilia-title {
+  min-height: 50px;
+  padding-top: 40px;
+}
+.wrapper main .reggio-emilia-title .center .reggio-emilia-title-photo {
+  background: url("../assets/img/item_reggio.png") no-repeat;
+  background-size: contain;
+  width: 176px;
+  height: 164px;
+  margin: 0 auto;
+}
+.wrapper main .reggio-emilia-title .center span {
+  display: block;
+  font-family: OpenSans-Light;
+  text-align: center;
+  color: #606060;
+}
+.wrapper main .reggio-emilia-title .center span:nth-child(2) {
+  font-size: 3em;
+}
+.wrapper main .reggio-emilia-title .center span:nth-child(3) {
+  font-size: 1.6em;
+  max-width: 800px;
+  min-width: 300px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 50px 0 60px 0;
+}
+.wrapper main .reggio-emilia-training {
+  box-shadow: inset 0 20px 20px 1px #f7f7f7;
+  padding-top: 60px;
+}
+.wrapper main .reggio-emilia-training .center {
+  position: relative;
+}
+.wrapper main .reggio-emilia-training .center p {
+  font-family: OpenSans-Light;
+  font-size: 1.4em;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+.wrapper main .reggio-emilia-training .center .training-items {
+  /*.training-items-equal{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+   .equal-item{
+      width: 50%;
+      margin-bottom: 120px;
+     span{
+       display: block;
+       width: 300px;
+       padding-left: 15%;
+       font-size: 1.4em;
+       font-family: OpenSans-Light;
+       line-height: 1.5;
+     }
+     &.item-common{
+       color: #b2b2b2;
+     }
+     &.item-other{
+       span{
+         padding-left: 30%;
+       }
+     }
+     &:nth-child(4){
+       span{
+         padding-left: 20%;
+       }
+     }
+     &:nth-child(12){
+       span{
+         padding-left: 40%;
+       }
+     }
+     &:nth-child(13){
+       span{
+         padding-left: 10%;
+       }
+     }
+   }
+  }
+  .reggio-trainings-item1{
+    position: absolute;
+    background: url("../assets/img/emilia-trainings-1.png") no-repeat;
+    background-size: contain;
+    width: 351px;
+    height: 132px;
+    top: 14%;
+    left: 30%;
+  }
+  .reggio-trainings-item2{
+    position: absolute;
+    background: url("../assets/img/emilia-trainings-2.png") no-repeat;
+    background-size: contain;
+    width: 310px;
+    height: 173px;
+    top: 24%;
+    left: 29%;
+  }
+  .reggio-trainings-item3{
+    position: absolute;
+    background: url("../assets/img/emilia-trainings-3.png") no-repeat;
+    background-size: contain;
+    width: 299px;
+    height: 169px;
+    top: 35%;
+    left: 37%;
+  }
+  .reggio-trainings-item4{
+    position: absolute;
+    background: url("../assets/img/emilia-trainings-4.png") no-repeat;
+    background-size: contain;
+    width: 304px;
+    height: 224px;
+    top: 47%;
+    left: 30%;
+  }
+  .reggio-trainings-item5{
+    position: absolute;
+    background: url("../assets/img/emilia-trainings-5.png") no-repeat;
+    background-size: contain;
+    width: 341px;
+    height: 207px;
+    top: 61%;
+    left: 33%;
+  }
+  .reggio-trainings-item6{
+    position: absolute;
+    background: url("../assets/img/emilia-trainings-6.png") no-repeat;
+    background-size: contain;
+    width: 368px;
+    height: 175px;
+    top: 76%;
+    left: 36%;
+  }
+  .reggio-trainings-item7{
+    position: absolute;
+    background: url("../assets/img/emilia-trainings-7.png") no-repeat;
+    background-size: contain;
+    width: 338px;
+    height: 221px;
+    top: 86%;
+    left: 33%;
+  }*/
+}
+.wrapper main .reggio-emilia-training .center .training-items .training-items-head {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 60px 0 80px 0;
+}
+.wrapper main .reggio-emilia-training .center .training-items .training-items-head span {
+  display: block;
+  margin: 0 auto;
+  font-family: OpenSans-Semibold;
+  font-size: 2.4em;
+}
+.wrapper main .reggio-emilia-training .center .training-items .training-items-head span:first-child {
+  color: #e84662;
+}
+.wrapper main .reggio-emilia-training .center .training-items .training-items-head span:nth-child(2) {
+  color: #61a18d;
+}
+.wrapper main .reggio-emilia-training .center .training-items .training-items-equal {
+  min-height: 50px;
+}
+.wrapper main .reggio-emilia-training .center .training-items .training-items-equal .equal-item-top {
+  display: none;
+}
+.wrapper main .reggio-emilia-training .center .training-items .training-items-equal .equal-item {
+  min-height: 50px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 120px;
+}
+.wrapper main .reggio-emilia-training .center .training-items .training-items-equal .equal-item .equal-item-block {
+  width: 50%;
+}
+.wrapper main .reggio-emilia-training .center .training-items .training-items-equal .equal-item .equal-item-block span {
+  display: block;
+  font-size: 1.4em;
+  font-family: OpenSans-Light;
+  line-height: 1.5;
+  box-sizing: border-box;
+}
+.wrapper main .reggio-emilia-training .center .training-items .training-items-equal .equal-item .equal-item-block.left-block {
+  color: #b2b2b2;
+}
+.wrapper main .reggio-emilia-training .center .training-items .training-items-equal .equal-item.reggio-item-1:before {
+  position: absolute;
+  display: block;
+  content: "";
+  background: url("../assets/img/emilia-trainings-1.png") no-repeat;
+  background-size: contain;
+  width: 351px;
+  height: 132px;
+  top: -50px;
+  left: 34%;
+}
+.wrapper main .reggio-emilia-training .center .training-items .training-items-equal .equal-item.reggio-item-1 .left-block span {
+  padding-left: 40%;
+}
+.wrapper main .reggio-emilia-training .center .training-items .training-items-equal .equal-item.reggio-item-1 .right-block span {
+  padding: 0 25% 0 32%;
+}
+.wrapper main .reggio-emilia-training .center .training-items .training-items-equal .equal-item.reggio-item-2:before {
+  position: absolute;
+  display: block;
+  content: "";
+  background: url("../assets/img/emilia-trainings-2.png") no-repeat;
+  background-size: contain;
+  width: 310px;
+  height: 173px;
+  top: -35px;
+  left: 28%;
+}
+.wrapper main .reggio-emilia-training .center .training-items .training-items-equal .equal-item.reggio-item-2 .left-block span {
+  padding: 0 38% 0 20%;
+}
+.wrapper main .reggio-emilia-training .center .training-items .training-items-equal .equal-item.reggio-item-2 .right-block span {
+  padding: 0 35% 0 13%;
+}
+.wrapper main .reggio-emilia-training .center .training-items .training-items-equal .equal-item.reggio-item-3:before {
+  position: absolute;
+  display: block;
+  content: "";
+  background: url("../assets/img/emilia-trainings-3.png") no-repeat;
+  background-size: contain;
+  width: 299px;
+  height: 169px;
+  top: -45px;
+  left: 43%;
+}
+.wrapper main .reggio-emilia-training .center .training-items .training-items-equal .equal-item.reggio-item-3 .left-block span {
+  padding-left: 40%;
+}
+.wrapper main .reggio-emilia-training .center .training-items .training-items-equal .equal-item.reggio-item-3 .right-block span {
+  padding: 0 2% 0 40%;
+}
+.wrapper main .reggio-emilia-training .center .training-items .training-items-equal .equal-item.reggio-item-4:before {
+  position: absolute;
+  display: block;
+  content: "";
+  background: url("../assets/img/emilia-trainings-4.png") no-repeat;
+  background-size: contain;
+  width: 304px;
+  height: 224px;
+  top: -65px;
+  left: 21%;
+}
+.wrapper main .reggio-emilia-training .center .training-items .training-items-equal .equal-item.reggio-item-4 .equal-item-block span {
+  padding-right: 40%;
+}
+.wrapper main .reggio-emilia-training .center .training-items .training-items-equal .equal-item.reggio-item-5:before {
+  position: absolute;
+  display: block;
+  content: "";
+  background: url("../assets/img/emilia-trainings-5.png") no-repeat;
+  background-size: contain;
+  width: 341px;
+  height: 207px;
+  top: -55px;
+  left: 41%;
+}
+.wrapper main .reggio-emilia-training .center .training-items .training-items-equal .equal-item.reggio-item-5 .left-block span {
+  padding: 0 15% 0 50%;
+}
+.wrapper main .reggio-emilia-training .center .training-items .training-items-equal .equal-item.reggio-item-5 .right-block span {
+  padding-left: 45%;
+}
+.wrapper main .reggio-emilia-training .center .training-items .training-items-equal .equal-item.reggio-item-6:before {
+  position: absolute;
+  display: block;
+  content: "";
+  background: url("../assets/img/emilia-trainings-6.png") no-repeat;
+  background-size: contain;
+  width: 368px;
+  height: 175px;
+  top: -45px;
+  left: 20%;
+}
+.wrapper main .reggio-emilia-training .center .training-items .training-items-equal .equal-item.reggio-item-6 .left-block span {
+  padding: 0 60% 0 0;
+}
+.wrapper main .reggio-emilia-training .center .training-items .training-items-equal .equal-item.reggio-item-6 .right-block span {
+  padding: 0 40% 0 10%;
+}
+.wrapper main .reggio-emilia-training .center .training-items .training-items-equal .equal-item.reggio-item-7:before {
+  position: absolute;
+  display: block;
+  content: "";
+  background: url("../assets/img/emilia-trainings-7.png") no-repeat;
+  background-size: contain;
+  width: 338px;
+  height: 221px;
+  top: -75px;
+  left: 43%;
+}
+.wrapper main .reggio-emilia-training .center .training-items .training-items-equal .equal-item.reggio-item-7 .left-block span {
+  padding: 0 5% 0 53%;
+}
+.wrapper main .reggio-emilia-training .center .training-items .training-items-equal .equal-item.reggio-item-7 .right-block span {
+  padding: 0 12% 0 50%;
+}
+.wrapper main .regqio-emilia-whale {
+  width: inherit;
+  min-height: 50px;
+  padding-bottom: 50px;
+}
+.wrapper main .regqio-emilia-whale .center span {
+  font-family: OpenSans;
+  color: #606060;
+  font-size: 2.4em;
+  text-align: center;
+  display: block;
+  padding-bottom: 50px;
+}
+.wrapper main .regqio-emilia-whale .center .whale-item .whale-item-top span {
+  display: inline-block;
+  vertical-align: middle;
+  padding-bottom: 0;
+}
+.wrapper main .regqio-emilia-whale .center .whale-item .whale-item-top span:first-child {
+  font-family: OpenSans;
+  font-weight: bold;
+  font-size: 3.6em;
+  color: #61a18d;
+}
+.wrapper main .regqio-emilia-whale .center .whale-item .whale-item-top span:nth-child(2) {
+  font-family: OpenSans-Light;
+  font-size: 2.4em;
+}
+.wrapper main .regqio-emilia-whale .center .whale-item p {
+  font-family: OpenSans-Light;
+  font-size: 1.4em;
+  margin: 50px 0;
+}
+.wrapper main .regqio-emilia-whale .center .whale-item p a {
+  color: #eb9921;
 }
 .wrapper main .center .title-block {
   text-align: center;
