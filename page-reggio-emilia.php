@@ -153,7 +153,7 @@
                         </div>
                     </div>
                     <div class="equal-item-top">
-                        <span>7.</span>
+                        <span>7 1.</span>
                         <span>Ребенок</span>
                     </div>
                     <div class="equal-item reggio-item-7">
