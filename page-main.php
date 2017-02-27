@@ -2,26 +2,22 @@
 	<main>
 		<div class="main-slider">
 			<div class="center">
-				<div class="main-slider-slide">
-					<div class="main-slider-photo"></div>
-				<span>Creative Kids - это вдохновляющий билингвальный частный детский сад и творческое
-				ателье “Yellow Bird” с самыми разными студиями для детей.</span>
-				</div>
-				<div class="main-slider-slide">
-					<div class="main-slider-photo"></div>
-				<span>Creative Kids - это вдохновляющий билингвальный частный детский сад и творческое
-				ателье “Yellow Bird” с самыми разными студиями для детей.</span>
-				</div>
-				<div class="main-slider-slide">
-					<div class="main-slider-photo"></div>
-				<span>Creative Kids - это вдохновляющий билингвальный частный детский сад и творческое
-				ателье “Yellow Bird” с самыми разными студиями для детей.</span>
-				</div>
-				<div class="main-slider-slide">
-					<div class="main-slider-photo"></div>
-				<span>Creative Kids - это вдохновляющий билингвальный частный детский сад и творческое
-				ателье “Yellow Bird” с самыми разными студиями для детей.</span>
-				</div>
+				<?php if ( have_posts() ) :  query_posts('cat=4’.’&order=ASC'.'&showposts=6');
+					while (have_posts()) : the_post();
+						if( have_rows('main_slider') ):
+							while ( have_rows('main_slider') ) : the_row();
+								?>
+								<div class="main-slider-slide">
+									<div class="main-slider-photo" style="background-image: url('<?= the_sub_field('main_slider_pic'); ?>')"></div>
+									<span><?= the_sub_field('main_slider_describe'); ?></span>
+								</div>
+								<?php
+							endwhile;
+						endif;
+					endwhile;
+				endif;
+				wp_reset_query();
+				?>
 			</div>
 		</div>
 		<div class="request-buttons">
@@ -42,42 +38,23 @@
 					<span>Наши принципы</span>
 				</div>
 				<div class="our-principles-block">
-					<div class="our-principles-items our-principles-item1">
-						<span>Рэджио философия и педагогика слушания</span>
-						<span>Мы воплощаем в жизнь самый прогрессивный подход к дошкольному образованию Reggio Emilia</span>
-					</div>
-					<div class="our-principles-items our-principles-item2">
-						<span>Игровое обучение на английском</span>
-						<span>Мы учимся, играя, потому что, знаем о большом потенциале креативной игры.</span>
-					</div>
-					<div class="our-principles-items our-principles-item3">
-						<span>Эко-пространство</span>
-						<span>Как и в Монтессори, мы убеждены в том, что пространство является третьим учителем.</span>
-					</div>
-					<div class="our-principles-items our-principles-item4">
-						<span>100 языков детей</span>
-						<span>Мы создаем возможности для свободного творчества.</span>
-					</div>
-					<div class="our-principles-items our-principles-item5">
-						<span>Подготовка к школе будущего</span>
-						<span>Мы развиваем навыки XXI века, креативность и воображение.</span>
-					</div>
-					<div class="our-principles-items our-principles-item6">
-						<span>Индивидуальный подход</span>
-						<span>Наши мамы и папы знают, какой опыт получают их дети, что их увлекает и над чем они работали сегодня.</span>
-					</div>
-					<div class="our-principles-items our-principles-item7">
-						<span>Фан</span>
-						<span>Мы превращаем обычные дела в приключения, потому что в детстве должно быть задорно и весело.</span>
-					</div>
-					<div class="our-principles-items our-principles-item8">
-						<span>Теория привязанности</span>
-						<span>Мы прививаем доброту и уважение ко всему и каждому, лелеем доверие и самые теплые семейные ценности. </span>
-					</div>
-					<div class="our-principles-items our-principles-item9">
-						<span>Проекты</span>
-						<span> Мы ведем настоящую проектную деятельность, даем разгуляться детскому любопытству</span>
-					</div>
+					<?php if ( have_posts() ) :  query_posts('cat=3’.’&order=ASC'.'&showposts=6');
+						while (have_posts()) : the_post();
+							if( have_rows('our_principles') ):
+								while ( have_rows('our_principles') ) : the_row();
+									?>
+									<div class="our-principles-items">
+										<div class="our-principles-item" style="background-image: url('<?= the_sub_field('principles_pic'); ?>')"></div>
+										<span><?= the_sub_field('principles_title'); ?></span>
+										<span><?= the_sub_field('principles_description'); ?></span>
+									</div>
+									<?php
+								endwhile;
+							endif;
+						endwhile;
+					endif;
+					wp_reset_query();
+					?>
 				</div>
 			</div>
 		</div>

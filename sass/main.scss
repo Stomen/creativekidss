@@ -93,18 +93,20 @@
 
           }
           span{
-            box-sizing: border-box;
-            display: block;
-            font-family: OpenSans-Light;
-            font-size: 1.6em;
-            max-width: 690px;
-            min-width: 280px;
-            width: 100%;
-            margin: 15px auto 0 auto;
-            padding-left: 5px;
-            padding-top: 15px;
-            background: url("../assets/img/lines.png") no-repeat;
-            line-height: 1.5;
+            p{
+              box-sizing: border-box;
+              display: block;
+              font-family: OpenSans-Light;
+              font-size: 1.6em;
+              max-width: 690px;
+              min-width: 280px;
+              width: 100%;
+              margin: 15px auto 0 auto;
+              padding-left: 5px;
+              padding-top: 15px;
+              background: url("../assets/img/lines.png") no-repeat;
+              line-height: 1.5;
+            }
           }
         }
       }
@@ -166,56 +168,31 @@
           width: 300px;
           min-height: 50px;
           margin-bottom: 30px;
-          padding-top: 90px;
+          .our-principles-item{
+            background: center center url("../assets/img/p_item2.png") no-repeat;
+            width: 94px;
+            height: 100px;
+            background-size: contain;
+            margin: 0 auto;
+            vertical-align: middle;
+          }
           span{
             line-height: 1.5;
             display: block;
             text-align: center;
-            &:first-child{
+            &:nth-child(2){
               font-family: OpenSans-Semibold;
               font-size: 1.6em;
               margin-top: 10px;
             }
-            &:nth-child(2){
+            &:nth-child(3){
               font-family: OpenSans-Light;
               font-size: 1.4em;
               margin-top: 20px;
             }
           }
         }
-        .our-principles-item1{
-          background: center top url("../assets/img/p_item1.png") no-repeat;
-        }
-        .our-principles-item2{
-          background: center 30px url("../assets/img/p_item2.png") no-repeat;
-        }
-        .our-principles-item3{
-          background: center 20px url("../assets/img/p_item3.png") no-repeat;
-        }
-        .our-principles-item4{
-          background: center 20px url("../assets/img/p_item4.png") no-repeat;
-        }
-        .our-principles-item5{
-          background: center 20px url("../assets/img/p_item5.png") no-repeat;
-        }
-        .our-principles-item6{
-          background: center 20px url("../assets/img/p_item6.png") no-repeat;
-        }
-        .our-principles-item7{
-          background: center top url("../assets/img/p_item7.png") no-repeat;
-        }
-        .our-principles-item8{
-          background: center top url("../assets/img/p_item8.png") no-repeat;
-        }
-        .our-principles-item9{
-          background: center 20px url("../assets/img/p_item9.png") no-repeat;
-        }
-
-
       }
-
-
-
     }
     .mission{
       box-shadow: 0px -11px 20px 0px rgba(247, 247, 247, 1);
