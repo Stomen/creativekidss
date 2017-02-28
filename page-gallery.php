@@ -4,48 +4,36 @@
         <div class="center">
             <div class="main-slider-slide gallery-block">
                 <div class="main-slider-photo gallery-block-photo"></div>
-				<span>У нас случаются удивительные вещи, придумываются оригинальные идеи, воплощаются невероятные детские мечты.
-                    Мы крепко дружим, много играем, свободно творим и экспериментируем, каждый день делаем маленькие открытия и раскрываем 
-                    большие таланты. А еще у нас умиротворенно, радостно и душевно.
+				<span>
+                    <?= category_description(6); ?>
                 </span>
             </div>
         </div>
     </div>
     <div class="photo-gallery">
         <div class="center">
-            <div class="title-block title-block-gallery">
-                <span>Название 1</span>
-            </div>
-            <div class="photo-gallery-slider gallery-block-slider">
-                <div class="photo-gallery-item"></div>
-                <div class="photo-gallery-item"></div>
-                <div class="photo-gallery-item"></div>
-                <div class="photo-gallery-item"></div>
-                <div class="photo-gallery-item"></div>
-                <div class="photo-gallery-item"></div>
-            </div>
-            <div class="title-block">
-                <span>Название 2</span>
-            </div>
-            <div class="photo-gallery-slider gallery-block-slider">
-                <div class="photo-gallery-item"></div>
-                <div class="photo-gallery-item"></div>
-                <div class="photo-gallery-item"></div>
-                <div class="photo-gallery-item"></div>
-                <div class="photo-gallery-item"></div>
-                <div class="photo-gallery-item"></div>
-            </div>
-            <div class="title-block">
-                <span>Название 3</span>
-            </div>
-            <div class="photo-gallery-slider gallery-block-slider">
-                <div class="photo-gallery-item"></div>
-                <div class="photo-gallery-item"></div>
-                <div class="photo-gallery-item"></div>
-                <div class="photo-gallery-item"></div>
-                <div class="photo-gallery-item"></div>
-                <div class="photo-gallery-item"></div>
-            </div>
+            <?php if ( have_posts() ) :  query_posts('cat=6’.’&order=ASC'.'&posts_per_page=6');
+                while (have_posts()) : the_post();
+                    ?>
+                    <div class="title-block ">
+                        <span><?php the_title(); ?></span>
+                    </div>
+                    <div class="photo-gallery-slider gallery-block-slider">
+                    <?php
+                    if( have_rows('slider') ):
+                        while ( have_rows('slider') ) : the_row();
+                            ?>
+                            <div class="photo-gallery-item" style="background-image: url('<?= the_sub_field('slider_pic'); ?>')"></div>
+                            <?php
+                        endwhile;
+                    endif;
+                    ?>
+                    </div>
+                        <?php
+                endwhile;
+            endif;
+            wp_reset_query();
+            ?>
             <button class="gallery-button">Другие фотографии</button>
         </div>
     </div>

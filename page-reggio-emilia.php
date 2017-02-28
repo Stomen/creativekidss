@@ -26,155 +26,29 @@
                     <span>Обучение по Реджио-философии</span>
                 </div>
                 <div class="training-items-equal">
-                    <div class="equal-item-top">
-                        <span>1.</span>
-                        <span>Ребенок</span>
-                    </div>
-                    <div class="equal-item reggio-item-1">
-                        <div class="equal-item-block left-block">
-                            <span>Объект обучения.</span>
-                        </div>
-                        <div class="equal-item-block right-block">
-                            <span>Богатая, сильная личность,
-                            талантливая и компетентная,
-                            способная брать ответственность
-                            за свое обучение.
-                            </span>
-                        </div>
-                    </div>
-                    <div class="equal-item-top">
-                        <span>2.</span>
-                        <span>Ребенок</span>
-                    </div>
-                    <div class="equal-item reggio-item-2">
-                        <div class="equal-item-block left-block">
-                            <span>Педагог передает информацию,
-                        устанавливает четкие правила,
-                        виды деятельности, ограничения,
-                        многое делает за детей, дает
-                        оценку работам детей.
-                            </span>
-                        </div>
-                        <div class="equal-item-block right-block">
-                            <span>Педагог ассистирует детям, подталкивает
-                        их к самостоятельности, поддерживает
-                        инициативу, учит детей оценивать работу
-                        самостоятельно. Он друг, соавтор,
-                        вдохновитель и провокатор.
-                            </span>
-                        </div>
-                    </div>
-                    <div class="equal-item-top">
-                        <span>3.</span>
-                        <span>Ребенок</span>
-                    </div>
-                    <div class="equal-item reggio-item-3">
-                        <div class="equal-item-block left-block">
-                            <span>Перегруженное яркими красками и кричащими
-                        элементами, фоновое, не развивающее
-                        сенсорное и пространственное восприятие,
-                        оформленное в типовом “детском” дизайне
-                            </span>
-                        </div>
-                        <div class="equal-item-block right-block">
-                            <span>Является третьим учителем, взаимодействует
-                        с ребенком,дает возможность для экспериментов
-                        и творчества, содержит множество природных
-                        материалов и материалов без конечного
-                        назначения, подчеркивает связь с природой.
-                            </span>
-                        </div>
-                    </div>
-                    <div class="equal-item-top">
-                        <span>4.</span>
-                        <span>Ребенок</span>
-                    </div>
-                    <div class="equal-item reggio-item-4">
-                        <div class="equal-item-block left-block">
-                            <span>Игрушки в большинстве ординарные,
-                        пластиковые, используются стандартные
-                        шаблоны для поделок, творческие
-                        материалы ограничены.
-                            </span>
-                        </div>
-                        <div class="equal-item-block right-block">
-                            <span>Подобрано все необходимое для полного
-                        самовыражения ребенка (самые многообразные
-                        материалы и инструменты), которые всегда
-                        доступны ребенку, развивают воображение
-                        и стимулируют познание.
-                            </span>
-                        </div>
-                    </div>
-                    <div class="equal-item-top">
-                        <span>5.</span>
-                        <span>Ребенок</span>
-                    </div>
-                    <div class="equal-item reggio-item-5">
-                        <div class="equal-item-block left-block">
-                            <span>Ребенок действует по плану,
-                        установленному учителем,
-                        не принимает решений и
-                        должен следовать четким
-                        инструкциям.
-                            </span>
-                        </div>
-                        <div class="equal-item-block right-block">
-                            <span>Ребенок участвует в выборе темы обучения,
-                        которая базируется на его подлинных
-                        интересах, выбирает материал для
-                        самовыражения, место занятий, может
-                        многократного возвращаться к интересующей
-                        теме, имеет право на ошибку и отдых.
-                            </span>
-                        </div>
-                    </div>
-                    <div class="equal-item-top">
-                        <span>6.</span>
-                        <span>Ребенок</span>
-                    </div>
-                    <div class="equal-item reggio-item-6">
-                        <div class="equal-item-block left-block">
-                            <span>Учитель может ограничивать
-                        общение во время занятий,
-                        сравнивает и оценивает детей.
-                        Одновозрастные классы не дают
-                        опыта помощи младшим, ориентира
-                        на старшего, не учат взаимодействию.
-                            </span>
-                        </div>
-                        <div class="equal-item-block right-block">
-                            <span>Дети не ограничиваются в общении, они
-                        общаются с детьми разного возраста и
-                        взрослыми на равных, учатся помогать
-                        и свободно взаимодействовать. Учителя
-                        не оценивают и не сравнивают детей.
-                            </span>
-                        </div>
-                    </div>
-                    <div class="equal-item-top">
-                        <span>7.</span>
-                        <span>Ребенок</span>
-                    </div>
-                    <div class="equal-item reggio-item-7">
-                        <div class="equal-item-block left-block">
-                            <span>Не участвует в процессе обучения,
-                        часто не знает,  к чему ребенок
-                        проявляет особенный интерес,
-                        что любит и чем увлечен в садике,
-                        как меняются его  интересы во
-                        времени.
-                            </span>
-                        </div>
-                        <div class="equal-item-block right-block">
-                            <span>Вовлечена в процесс обучения
-                        и документирования действий ребенка.
-                        Между учителем и родителями есть всегда
-                        непрерывная обратная связь. Создается
-                        атмосфера доверия и взаимопонимания.
-                            </span>
-                        </div>
-                    </div>
+
+                    <?php if ( have_posts() ) :  query_posts('cat=7’.’&order=ASC'.'&posts_per_page=7');
+                        $count = 1;
+                        while (have_posts()) : the_post();
+                            ?>
+                            <div class="equal-item-top">
+                                <span><?php the_title(); ?></span>
+                                <span><?php the_content(); ?></span>
+                            </div>
+                            <div class="equal-item reggio-item-<?php echo $count; ?>">
+                                <div class="equal-item-block left-block">
+                                    <span><?php the_field('equal_comon'); ?></span>
+                                </div>
+                                <div class="equal-item-block right-block">
+                            <span><?php the_field('equal_reggio'); ?></span>
+                                </div>
+                            </div>
+                    <?php
+                        $count++;
+                        endwhile;
+                    endif;
+                    wp_reset_query();
+                    ?>
             </div>
         </div>
     </div>

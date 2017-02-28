@@ -4,12 +4,12 @@
 			<div class="center">
 				<?php if ( have_posts() ) :  query_posts('cat=4’.’&order=ASC'.'&showposts=6');
 					while (have_posts()) : the_post();
-						if( have_rows('main_slider') ):
-							while ( have_rows('main_slider') ) : the_row();
+						if( have_rows('slider') ):
+							while ( have_rows('slider') ) : the_row();
 								?>
 								<div class="main-slider-slide">
-									<div class="main-slider-photo" style="background-image: url('<?= the_sub_field('main_slider_pic'); ?>')"></div>
-									<span><?= the_sub_field('main_slider_describe'); ?></span>
+									<div class="main-slider-photo" style="background-image: url('<?= the_sub_field('slider_pic'); ?>')"></div>
+									<span><?= the_sub_field('slider_describe'); ?></span>
 								</div>
 								<?php
 							endwhile;
@@ -35,7 +35,7 @@
 		<div class="our-principles">
 			<div class="center">
 				<div class="title-block">
-					<span>Наши принципы</span>
+					<span><?= get_cat_name(3); ?></span>
 				</div>
 				<div class="our-principles-block">
 					<?php if ( have_posts() ) :  query_posts('cat=3’.’&order=ASC'.'&showposts=6');
@@ -61,49 +61,45 @@
 		<div class="mission">
 			<div class="center">
 				<div class="title-block">
-					<span>Наша миссия</span>
+					<span><?= get_cat_name(5); ?></span>
 				</div>
-			<span>Мы создаем будущее, в котором у наших малышей есть все навыки, умения и знания для того, чтобы
-					стать успешными в стремительно меняющемся мире, делать то, что они любят и любить то, что они
-					делают.</span>
+			<span><?= category_description(5); ?></span>
 				<div class="mission-items">
+					<?php if ( have_posts() ) :  query_posts('cat=5’.’&order=ASC'.'&showposts=6');
+						while (have_posts()) : the_post();
+					?>
 					<div class="mission-item">
-					<span>“Есть две важные вещи, которые мы
-							можем передать нашим детям. Одна
-							из них корни, другая –  Крылья.”</span>
-						<span>Ходдинг Картер</span>
+						<?php the_content(); ?>
+						<p><?php the_title(); ?></p>
 					</div>
-					<div class="mission-item">
-					<span>“Способности могут не проявляться до
-							тех пор, пока не создадутся подходящие
-							 возможности для их реализации.”</span>
-						<span>Сэр Кэн Робинсон</span>
-					</div>
-					<div class="mission-item">
-					<span>“Знание может привести из пункта
-						А в пункт Б, а воображение куда
-						угодно.”</span>
-						<span>Альберт Эйнштейн</span>
-					</div>
+					<?php
+						endwhile;
+					endif;
+					wp_reset_query();
+					?>
 				</div>
 			</div>
 		</div>
 		<div class="photo-gallery">
 			<div class="center">
 				<div class="title-block">
-					<span>Фотогалерея</span>
+					<span><?= get_cat_name(6); ?></span>
 				</div>
-					<span>У нас случаются удивительные вещи, придумываются оригинальные идеи, воплощаются невероятные детские мечты.
-						Мы крепко дружим, много играем, свободно творим и экспериментируем, каждый день делаем маленькие открытия и раскрываем
-						большие таланты. А еще у нас умиротворенно, радостно и душевно.
-					</span>
+					<span><?= category_description(6); ?></span>
 				<div class="photo-gallery-slider">
-					<div class="photo-gallery-item"></div>
-					<div class="photo-gallery-item"></div>
-					<div class="photo-gallery-item"></div>
-					<div class="photo-gallery-item"></div>
-					<div class="photo-gallery-item"></div>
-					<div class="photo-gallery-item"></div>
+					<?php if ( have_posts() ) :  query_posts('cat=6’.’&order=ASC'.'&posts_per_page=1');
+						while (have_posts()) : the_post();
+							if( have_rows('slider') ):
+								while ( have_rows('slider') ) : the_row();
+									?>
+										<div class="photo-gallery-item" style="background-image: url('<?= the_sub_field('slider_pic'); ?>')"></div>
+									<?php
+								endwhile;
+							endif;
+						endwhile;
+					endif;
+					wp_reset_query();
+					?>
 				</div>
 				<button onclick="location.href='gallery'">Другие фотографии</button>
 			</div>
