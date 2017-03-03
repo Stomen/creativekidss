@@ -9,6 +9,7 @@
 								?>
 								<div class="main-slider-slide">
 									<div class="main-slider-photo" style="background-image: url('<?= the_sub_field('slider_pic'); ?>')"></div>
+									<span></span>
 									<span><?= the_sub_field('slider_describe'); ?></span>
 								</div>
 								<?php
@@ -22,14 +23,18 @@
 		</div>
 		<div class="request-buttons">
 			<div class="request-link1">
-				<div class="request-link">
-					<span>Частный детский сад</span>
-				</div>
+				<a href="creative-kids">
+					<div class="request-link">
+						<span>Частный детский сад</span>
+					</div>
+				</a>
 			</div>
 			<div class="request-link2">
-				<div class="request-link">
-					<span>Творческое Ателье “Yellow Bird”</span>
-				</div>
+				<a href="yellow-bird">
+					<div class="request-link">
+						<span>Творческое Ателье “Yellow Bird”</span>
+					</div>
+				</a>
 			</div>
 		</div>
 		<div class="our-principles">
@@ -69,8 +74,8 @@
 						while (have_posts()) : the_post();
 					?>
 					<div class="mission-item">
-						<?php the_content(); ?>
-						<p><?php the_title(); ?></p>
+						<span><?php the_content(); ?></span>
+						<span><?php the_title(); ?></span>
 					</div>
 					<?php
 						endwhile;

@@ -87,6 +87,9 @@
   }
 }
 @media screen and (max-width: 425px) {
+  html body .wrapper header .center .logo {
+    margin-left: 5px;
+  }
   html body .wrapper main .reggio-emilia-training .center .training-items .training-items-head {
     flex-wrap: nowrap;
     margin: 30px 0 40px 0;
@@ -164,19 +167,250 @@
   html body .wrapper main .reggio-emilia-training .center .training-items .training-items-equal .equal-item.reggio-item-7:before {
     display: none;
   }
-  html body .wrapper main header .center .logo {
-    margin-left: 25px;
-  }
-  html body .wrapper main footer .center nav {
-    margin-bottom: 20px;
-  }
-  html body .wrapper main footer .center .why-we {
-    margin-bottom: 25px;
-  }
   html body .wrapper main .request-buttons .request-link1 .request-link span {
     margin-right: 0;
   }
   html body .wrapper main .request-buttons .request-link2 .request-link span {
     margin-left: 0;
+  }
+  html body .wrapper footer .center nav {
+    margin-bottom: 20px;
+  }
+  html body .wrapper footer .center .why-we {
+    margin-bottom: 25px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  html body .wrapper main .our-principles .center:before {
+    position: absolute;
+    display: block;
+    content: "";
+    background: url("../assets/img/fox.png");
+    width: 265px;
+    height: 319px;
+    left: -235px;
+    bottom: -18px;
+  }
+  html body .wrapper main .our-principles .center:after {
+    position: absolute;
+    display: block;
+    content: "";
+    background: url("../assets/img/Flower.png");
+    width: 37px;
+    height: 71px;
+    left: -7%;
+    top: 33%;
+  }
+  html body .wrapper main .mission .center:before {
+    position: absolute;
+    display: block;
+    content: "";
+    background: url("../assets/img/Flower1.png");
+    width: 39px;
+    height: 38px;
+    left: -10%;
+    top: 28%;
+  }
+  html body .wrapper main .mission .center:after {
+    position: absolute;
+    display: block;
+    content: "";
+    background: url("../assets/img/bow.png");
+    width: 46px;
+    height: 43px;
+    right: -7%;
+    top: 27%;
+  }
+  html body .wrapper main .photo-gallery .center:before {
+    position: absolute;
+    display: block;
+    content: "";
+    background: url("../assets/img/ladybug.png");
+    width: 140px;
+    height: 154px;
+    left: -140px;
+    top: 30%;
+  }
+  html body .wrapper main .photo-gallery .center:after {
+    position: absolute;
+    display: block;
+    content: "";
+    background: url("../assets/img/chery.png");
+    transform: rotate(-180deg);
+    width: 52px;
+    height: 37px;
+    left: -7%;
+    bottom: -5%;
+  }
+  html body .wrapper main .photo-gallery.large-gallery .center:before {
+    position: absolute;
+    display: block;
+    content: "";
+    background: url("../assets/img/bike.png");
+    transform: rotate(20deg);
+    width: 112px;
+    height: 81px;
+    left: -20%;
+    top: 20%;
+  }
+  html body .wrapper main .photo-gallery.large-gallery .center:after {
+    position: absolute;
+    display: block;
+    content: "";
+    background: url("../assets/img/shell.png");
+    transform: rotate(30deg);
+    width: 43px;
+    height: 34px;
+    left: -20%;
+    bottom: 20%;
+  }
+  html body .wrapper main .photo-gallery.large-gallery .center .pic-item1 {
+    position: absolute;
+    display: block;
+    content: "";
+    background: url("../assets/img/Flower3.png");
+    width: 57px;
+    height: 62px;
+    right: -20%;
+    bottom: 50%;
+  }
+  html body .wrapper main .photo-gallery.large-gallery .center .pic-item2 {
+    position: absolute;
+    display: block;
+    content: "";
+    background: url("../assets/img/leaf.png");
+    width: 59px;
+    height: 39px;
+    right: -20%;
+    bottom: 5%;
+  }
+  html body .wrapper main .photo-gallery .reggio-emilia-training .center .training-items .pic-item2 {
+    display: block;
+    content: "";
+    background: url("../assets/img/cristmasTree.png");
+    width: 42px;
+    height: 44px;
+    right: -20%;
+    top: 18%;
+  }
+  html body .wrapper main .photo-gallery .reggio-emilia-training .center .training-items .pic-item1 {
+    display: block;
+    content: "";
+    background: url("../assets/img/Flower2.png");
+    width: 69px;
+    height: 80px;
+    right: -20%;
+    bottom: 15%;
+  }
+  html body .wrapper main .photo-gallery .reggio-emilia-training .center .training-items:before {
+    position: absolute;
+    display: block;
+    content: "";
+    background: url("../assets/img/chery1.png");
+    width: 50px;
+    height: 63px;
+    left: -20%;
+    top: 15%;
+  }
+  html body .wrapper main .photo-gallery .reggio-emilia-training .center .training-items:after {
+    position: absolute;
+    display: block;
+    content: "";
+    background: url("../assets/img/apple.png");
+    width: 35px;
+    height: 42px;
+    left: -20%;
+    bottom: 25%;
+  }
+  html body .wrapper main .photo-gallery .reggio-emilia-training .regqio-emilia-whale .center .pic-item1 {
+    display: block;
+    content: "";
+    background: url("../assets/img/leaf.png");
+    width: 59px;
+    height: 39px;
+    right: -20%;
+    bottom: 50%;
+  }
+  html body .wrapper main .photo-gallery .reggio-emilia-training .regqio-emilia-whale .center:before {
+    position: absolute;
+    display: block;
+    content: "";
+    background: url("../assets/img/Flower4.png");
+    width: 37px;
+    height: 96px;
+    left: -20%;
+    top: 15%;
+  }
+  html body .wrapper main .photo-gallery .reggio-emilia-training .regqio-emilia-whale .center:after {
+    position: absolute;
+    display: block;
+    content: "";
+    background: url("../assets/img/leaf1.png");
+    width: 39px;
+    height: 43px;
+    left: -25%;
+    bottom: 25%;
+  }
+  html body .wrapper main .about-description .center .about-description-photos:before {
+    position: absolute;
+    display: block;
+    content: "";
+    background: url("../assets/img/star.png");
+    width: 44px;
+    height: 47px;
+    left: -10%;
+    top: 15%;
+  }
+  html body .wrapper main .about-description .center .about-description-photos:after {
+    position: absolute;
+    display: block;
+    content: "";
+    background: url("../assets/img/panda.png");
+    width: 40px;
+    height: 37px;
+    right: -15%;
+    top: 5%;
+  }
+  html body .wrapper main .about-feedback.creative-theme .center form:before {
+    position: absolute;
+    display: block;
+    content: "";
+    background: url("../assets/img/leaf1.png");
+    transform: rotate(90deg);
+    width: 39px;
+    height: 43px;
+    left: -10%;
+    top: 15%;
+  }
+  html body .wrapper main .about-feedback.creative-theme .center form:after {
+    position: absolute;
+    display: block;
+    content: "";
+    background: url("../assets/img/Flower4.png");
+    width: 37px;
+    height: 96px;
+    right: -15%;
+    top: 30%;
+  }
+  html body .wrapper main .about-feedback .center form:before {
+    position: absolute;
+    display: block;
+    content: "";
+    background: url("../assets/img/chery.png");
+    transform: rotate(-90deg);
+    width: 52px;
+    height: 37px;
+    left: -10%;
+    top: 15%;
+  }
+  html body .wrapper main .about-feedback .center form:after {
+    position: absolute;
+    display: block;
+    content: "";
+    background: url("../assets/img/cup.png");
+    width: 36px;
+    height: 39px;
+    right: -15%;
+    top: -30%;
   }
 }

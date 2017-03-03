@@ -45,6 +45,7 @@
 .wrapper header .center nav ul li {
   list-style: none;
   display: inline-block;
+  position: relative;
 }
 .wrapper header .center nav ul li a {
   font-family: "Century Gothic";
@@ -56,6 +57,21 @@
 .wrapper header .center nav ul li a:hover {
   color: #eb9921;
 }
+.wrapper header .center nav ul li ul {
+  position: absolute;
+  width: 200px;
+  display: none;
+}
+.wrapper header .center nav ul li ul:hover {
+  display: block;
+}
+.wrapper header .center nav ul li ul li {
+  display: block;
+  margin-top: 20px;
+}
+.wrapper header .center nav ul li:first-child:hover ul {
+  display: block;
+}
 .wrapper main {
   width: inherit;
   min-height: 50px;
@@ -63,6 +79,9 @@
 .wrapper main .main-slider {
   min-height: 50px;
   padding-bottom: 25px;
+}
+.wrapper main .main-slider .center.slick-initialized.slick-slider.slick-dotted .slick-dots {
+  position: relative;
 }
 .wrapper main .main-slider .center .main-slider-slide {
   min-height: 50px;
@@ -150,6 +169,9 @@
   box-shadow: inset 0 20px 20px 1px #f7f7f7;
   padding-bottom: 20px;
 }
+.wrapper main .our-principles .center {
+  position: relative;
+}
 .wrapper main .our-principles .our-principles-block {
   display: flex;
   flex-direction: row;
@@ -188,6 +210,9 @@
 .wrapper main .mission {
   box-shadow: 0px -11px 20px 0px #f7f7f7;
 }
+.wrapper main .mission .center {
+  position: relative;
+}
 .wrapper main .mission .center p {
   max-width: 680px;
   min-width: 280px;
@@ -205,12 +230,12 @@
   justify-content: space-around;
   flex-wrap: wrap;
   align-items: flex-start;
-  margin: 80px 0 50px 0;
+  margin: 80px 0 30px 0;
 }
 .wrapper main .mission .center .mission-items .mission-item {
   margin-bottom: 30px;
 }
-.wrapper main .mission .center .mission-items .mission-item p {
+.wrapper main .mission .center .mission-items .mission-item span {
   display: block;
   font-size: 1.4em;
   padding-left: 60px;
@@ -219,15 +244,17 @@
   width: 100%;
   box-sizing: border-box;
 }
-.wrapper main .mission .center .mission-items .mission-item p:first-child {
+.wrapper main .mission .center .mission-items .mission-item span:first-child {
   font-family: OpenSans-Light;
   background: left 5px url("../assets/img/quotes.png") no-repeat;
   width: 50px;
   min-height: 38px;
+  line-height: 1.5;
 }
-.wrapper main .mission .center .mission-items .mission-item p:nth-child(2) {
+.wrapper main .mission .center .mission-items .mission-item span:nth-child(2) {
   font-family: OpenSans-Semibold;
   margin-top: 30px;
+  text-align: center;
 }
 .wrapper main .photo-gallery {
   box-shadow: inset 0 20px 20px 1px #f7f7f7;
@@ -237,6 +264,7 @@
 }
 .wrapper main .photo-gallery .center {
   text-align: center;
+  position: relative;
 }
 .wrapper main .photo-gallery .center span p {
   max-width: 970px;
@@ -261,7 +289,7 @@
   width: 328px;
   height: 226px;
   border: 6px solid white;
-  box-shadow: 0 0 15px 0 rgba(50, 50, 50, 0.5);
+  box-shadow: 0 0 15px 0 rgba(50, 50, 50, 0.3);
   margin: 10px;
   cursor: pointer;
 }
@@ -270,27 +298,32 @@
   height: 57px;
   background: white;
   border-radius: 0;
-  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
   z-index: 100;
 }
 .wrapper main .photo-gallery .center .photo-gallery-slider .slick-next:before {
-  content: ">";
+  content: "";
+  background: url("../assets/img/arrow1.png") no-repeat;
+  width: 13px;
+  height: 24px;
   display: block;
   color: #5e5e5e;
   font-size: 2em;
   margin: 0 auto;
-  padding-bottom: 5px;
 }
 .wrapper main .photo-gallery .center .photo-gallery-slider .slick-prev {
   content: "";
 }
 .wrapper main .photo-gallery .center .photo-gallery-slider .slick-prev:before {
-  content: "<";
+  content: "";
+  background: url("../assets/img/arrow1.png") no-repeat;
+  transform: rotate(180deg);
+  width: 13px;
+  height: 24px;
   display: block;
   color: #5e5e5e;
   font-size: 2em;
   margin: 0 auto;
-  padding-bottom: 5px;
 }
 .wrapper main .photo-gallery .center .photo-gallery-slider.gallery-block-slider {
   margin: 15px auto 0 auto;
@@ -300,7 +333,7 @@
   border: none;
   width: 255px;
   height: 45px;
-  border-radius: 18px;
+  border-radius: 20px;
   font-family: OpenSans;
   font-size: 1.8em;
   color: white;
@@ -318,12 +351,18 @@
   min-height: 50px;
   padding-bottom: 90px;
 }
+.wrapper main .about-quote.other-page {
+  padding-bottom: 40px;
+}
 .wrapper main .about-quote .center .about-quote-photo {
   background: url("../assets/img/about-kids.png") no-repeat;
   max-width: 348px;
   height: 230px;
   background-size: contain;
   margin: 20px auto 50px auto;
+}
+.wrapper main .about-quote .center .about-quote-photo.yellow-bird {
+  background: center center url("../assets/img/yellow-bird.png") no-repeat;
 }
 .wrapper main .about-quote .center span {
   font-family: OpenSans-Light;
@@ -348,8 +387,26 @@
   box-shadow: inset 0 20px 20px 1px #f7f7f7;
   padding-top: 70px;
 }
+.wrapper main .about-description .mail-pic {
+  background: url("../assets/img/envelope-animation.gif") no-repeat;
+  width: 198px;
+  height: 160px;
+  margin: 0 auto;
+}
 .wrapper main .about-description .center {
   text-align: center;
+}
+.wrapper main .about-description .center span {
+  display: block;
+  max-width: 650px;
+  min-width: 280px;
+  width: 100%;
+  margin: 0 auto;
+  font-family: OpenSans-Light;
+  font-size: 1.6em;
+  line-height: 1.5;
+  color: #606060;
+  padding: 20px 0 50px 0;
 }
 .wrapper main .about-description .center p {
   margin-bottom: 30px;
@@ -369,6 +426,7 @@
   flex-wrap: wrap;
   text-align: center;
   padding: 20px 0 45px 0;
+  position: relative;
 }
 .wrapper main .about-description .center .about-description-photos .about-description-photo {
   background: center url("../assets/img/desc1.png") no-repeat;
@@ -377,10 +435,6 @@
   border: 6px solid white;
   box-shadow: 0 0 15px 0 rgba(50, 50, 50, 0.5);
   margin: 10px;
-}
-.wrapper main .about-description .center img {
-  text-align: center;
-  margin: 0 0 30px 0;
 }
 .wrapper main .about-feedback {
   width: inherit;
@@ -392,6 +446,7 @@
   font-size: 1.6em;
   display: block;
   text-align: center;
+  color: #5e5e5e;
 }
 .wrapper main .about-feedback .center span:first-child {
   margin-bottom: 10px;
@@ -399,6 +454,7 @@
 .wrapper main .about-feedback .center form {
   width: 100%;
   padding-top: 55px;
+  position: relative;
 }
 .wrapper main .about-feedback .center form input {
   display: block;
@@ -454,14 +510,16 @@
 }
 .wrapper main .reggio-emilia-title .center span:nth-child(2) {
   font-size: 3em;
+  padding-top: 25px;
 }
-.wrapper main .reggio-emilia-title .center span:nth-child(3) {
+.wrapper main .reggio-emilia-title .center span:nth-child(3) p {
   font-size: 1.6em;
   max-width: 800px;
   min-width: 300px;
   width: 100%;
   margin: 0 auto;
   padding: 50px 0 60px 0;
+  line-height: 1.5;
 }
 .wrapper main .reggio-emilia-training {
   box-shadow: inset 0 20px 20px 1px #f7f7f7;
@@ -475,6 +533,17 @@
   font-size: 1.4em;
   line-height: 1.5;
   margin-bottom: 30px;
+}
+.wrapper main .reggio-emilia-training .center .training-items {
+  position: relative;
+}
+.wrapper main .reggio-emilia-training .center .training-items .pic-item1 {
+  position: absolute;
+  display: none;
+}
+.wrapper main .reggio-emilia-training .center .training-items .pic-item2 {
+  position: absolute;
+  display: none;
 }
 .wrapper main .reggio-emilia-training .center .training-items .training-items-head {
   display: flex;
@@ -641,6 +710,17 @@
   min-height: 50px;
   padding-bottom: 50px;
 }
+.wrapper main .regqio-emilia-whale .center {
+  position: relative;
+}
+.wrapper main .regqio-emilia-whale .center .pic-item1 {
+  position: absolute;
+  display: none;
+}
+.wrapper main .regqio-emilia-whale .center .pic-item2 {
+  position: absolute;
+  display: none;
+}
 .wrapper main .regqio-emilia-whale .center span {
   font-family: OpenSans;
   color: #606060;
@@ -648,6 +728,9 @@
   text-align: center;
   display: block;
   padding-bottom: 50px;
+}
+.wrapper main .regqio-emilia-whale .center .whale-item .whale-item-top {
+  display: flex;
 }
 .wrapper main .regqio-emilia-whale .center .whale-item .whale-item-top span {
   display: inline-block;
@@ -663,6 +746,7 @@
 .wrapper main .regqio-emilia-whale .center .whale-item .whale-item-top span:nth-child(2) {
   font-family: OpenSans-Light;
   font-size: 2.4em;
+  padding-top: 5px;
 }
 .wrapper main .regqio-emilia-whale .center .whale-item p {
   font-family: OpenSans-Light;
@@ -792,6 +876,9 @@
 .wrapper footer .center .contact-us .content-us-socialnet a:nth-child(4):hover {
   background: url("../assets/img/youtube.png") no-repeat;
   background-size: contain;
+}
+.wrapper footer .center .contact-us form {
+  padding-top: 5px;
 }
 .wrapper footer .center .contact-us form label {
   display: block;

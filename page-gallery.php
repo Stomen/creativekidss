@@ -4,14 +4,17 @@
         <div class="center">
             <div class="main-slider-slide gallery-block">
                 <div class="main-slider-photo gallery-block-photo"></div>
+                <span></span>
 				<span>
                     <?= category_description(6); ?>
                 </span>
             </div>
         </div>
     </div>
-    <div class="photo-gallery">
+    <div class="photo-gallery large-gallery">
         <div class="center">
+            <div class="pic-item1"></div>
+            <div class="pic-item2"></div>
             <?php if ( have_posts() ) :  query_posts('cat=6’.’&order=ASC'.'&posts_per_page=6');
                 while (have_posts()) : the_post();
                     ?>

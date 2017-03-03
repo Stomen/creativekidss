@@ -1,7 +1,7 @@
 		<footer>
 			<div class="center">
 				<nav>
-					<?php wp_nav_menu(array('menu' => 'main') ); ?>
+					<?php wp_nav_menu(array('menu' => 'footer_nav') ); ?>
 				</nav>
 				<div class="why-we">
 					<span>Почему мы</span>
@@ -17,8 +17,6 @@
 				<div class="contact-us">
 					<span>Свяжитесь с нами!</span>
 					<div class="content-us-socialnet">
-						<a href=""></a>
-						<a href=""></a>
 						<a href=""></a>
 						<a href=""></a>
 					</div>

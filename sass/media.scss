@@ -186,6 +186,13 @@
   html {
     body {
       .wrapper {
+        header {
+        .center {
+          .logo {
+            margin-left: 5px;
+          }
+        }
+      }
         main {
           .reggio-emilia-training {
             .center {
@@ -316,25 +323,6 @@
               }
             }
           }
-          header {
-            .center {
-              .logo {
-                margin-left: 25px;
-              }
-            }
-          }
-          footer {
-            .center {
-              nav {
-                margin-bottom: 20px;
-              }
-              .why-we {
-                margin-bottom: 25px;
-              }
-            }
-          }
-        }
-        main {
           .request-buttons {
             .request-link1 {
               .request-link {
@@ -347,6 +335,303 @@
               .request-link {
                 span {
                   margin-left: 0;
+                }
+              }
+            }
+          }
+        }
+        footer {
+          .center {
+            nav {
+              margin-bottom: 20px;
+            }
+            .why-we {
+              margin-bottom: 25px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 1440px) {
+  html {
+    body {
+      .wrapper {
+        main {
+          .our-principles {
+            .center {
+              &:before {
+                position: absolute;
+                display: block;
+                content: "";
+                background: url("../assets/img/fox.png");
+                width: 265px;
+                height: 319px;
+                left: -235px;
+                bottom: -18px;
+              }
+              &:after {
+                position: absolute;
+                display: block;
+                content: "";
+                background: url("../assets/img/Flower.png");
+                width: 37px;
+                height: 71px;
+                left: -7%;
+                top: 33%;
+              }
+            }
+          }
+          .mission {
+            .center {
+              &:before {
+                position: absolute;
+                display: block;
+                content: "";
+                background: url("../assets/img/Flower1.png");
+                width: 39px;
+                height: 38px;
+                left: -10%;
+                top: 28%;
+              }
+              &:after {
+                position: absolute;
+                display: block;
+                content: "";
+                background: url("../assets/img/bow.png");
+                width: 46px;
+                height: 43px;
+                right: -7%;
+                top: 27%;
+              }
+
+            }
+          }
+          .photo-gallery {
+            .center {
+              &:before {
+                position: absolute;
+                display: block;
+                content: "";
+                background: url("../assets/img/ladybug.png");
+                width: 140px;
+                height: 154px;
+                left: -140px;
+                top: 30%;
+              }
+              &:after {
+                position: absolute;
+                display: block;
+                content: "";
+                background: url("../assets/img/chery.png");
+                transform: rotate(-180deg);
+                width: 52px;
+                height: 37px;
+                left: -7%;
+                bottom: -5%;
+              }
+            }
+            &.large-gallery {
+              .center {
+                &:before {
+                  position: absolute;
+                  display: block;
+                  content: "";
+                  background: url("../assets/img/bike.png");
+                  transform: rotate(20deg);
+                  width: 112px;
+                  height: 81px;
+                  left: -20%;
+                  top: 20%;
+                }
+                &:after {
+                  position: absolute;
+                  display: block;
+                  content: "";
+                  background: url("../assets/img/shell.png");
+                  transform: rotate(30deg);
+                  width: 43px;
+                  height: 34px;
+                  left: -20%;
+                  bottom: 20%;
+                }
+                .pic-item1 {
+                  position: absolute;
+                  display: block;
+                  content: "";
+                  background: url("../assets/img/Flower3.png");
+                  width: 57px;
+                  height: 62px;
+                  right: -20%;
+                  bottom: 50%;
+                }
+                .pic-item2 {
+                  position: absolute;
+                  display: block;
+                  content: "";
+                  background: url("../assets/img/leaf.png");
+                  width: 59px;
+                  height: 39px;
+                  right: -20%;
+                  bottom: 5%;
+                }
+              }
+            }
+            .reggio-emilia-training {
+              .center {
+                .training-items {
+                  .pic-item2 {
+                    display: block;
+                    content: "";
+                    background: url("../assets/img/cristmasTree.png");
+                    width: 42px;
+                    height: 44px;
+                    right: -20%;
+                    top: 18%;
+                  }
+                  .pic-item1 {
+                    display: block;
+                    content: "";
+                    background: url("../assets/img/Flower2.png");
+                    width: 69px;
+                    height: 80px;
+                    right: -20%;
+                    bottom: 15%;
+                  }
+                  &:before {
+                    position: absolute;
+                    display: block;
+                    content: "";
+                    background: url("../assets/img/chery1.png");
+                    width: 50px;
+                    height: 63px;
+                    left: -20%;
+                    top: 15%;
+                  }
+                  &:after {
+                    position: absolute;
+                    display: block;
+                    content: "";
+                    background: url("../assets/img/apple.png");
+                    width: 35px;
+                    height: 42px;
+                    left: -20%;
+                    bottom: 25%;
+                  }
+                }
+              }
+              .regqio-emilia-whale {
+                .center {
+                  .pic-item1 {
+                    display: block;
+                    content: "";
+                    background: url("../assets/img/leaf.png");
+                    width: 59px;
+                    height: 39px;
+                    right: -20%;
+                    bottom: 50%;
+                  }
+                  &:before {
+                    position: absolute;
+                    display: block;
+                    content: "";
+                    background: url("../assets/img/Flower4.png");
+                    width: 37px;
+                    height: 96px;
+                    left: -20%;
+                    top: 15%;
+                  }
+                  &:after {
+                    position: absolute;
+                    display: block;
+                    content: "";
+                    background: url("../assets/img/leaf1.png");
+                    width: 39px;
+                    height: 43px;
+                    left: -25%;
+                    bottom: 25%;
+                  }
+                }
+              }
+            }
+          }
+          .about-description{
+            .center{
+              .about-description-photos{
+                &:before {
+                  position: absolute;
+                  display: block;
+                  content: "";
+                  background: url("../assets/img/star.png");
+                  width: 44px;
+                  height: 47px;
+                  left: -10%;
+                  top: 15%;
+                }
+                &:after {
+                  position: absolute;
+                  display: block;
+                  content: "";
+                  background: url("../assets/img/panda.png");
+                  width: 40px;
+                  height: 37px;
+                  right: -15%;
+                  top: 5%;
+                }
+              }
+            }
+          }
+          .about-feedback{
+            &.creative-theme{
+              .center{
+                form{
+                  &:before {
+                    position: absolute;
+                    display: block;
+                    content: "";
+                    background: url("../assets/img/leaf1.png");
+                    transform: rotate(90deg);
+                    width: 39px;
+                    height: 43px;
+                    left: -10%;
+                    top: 15%;
+                  }
+                  &:after {
+                    position: absolute;
+                    display: block;
+                    content: "";
+                    background: url("../assets/img/Flower4.png");
+                    width: 37px;
+                    height: 96px;
+                    right: -15%;
+                    top: 30%;
+                  }
+                }
+              }
+            }
+            .center{
+              form{
+                &:before {
+                  position: absolute;
+                  display: block;
+                  content: "";
+                  background: url("../assets/img/chery.png");
+                  transform: rotate(-90deg);
+                  width: 52px;
+                  height: 37px;
+                  left: -10%;
+                  top: 15%;
+                }
+                &:after {
+                  position: absolute;
+                  display: block;
+                  content: "";
+                  background: url("../assets/img/cup.png");
+                  width: 36px;
+                  height: 39px;
+                  right: -15%;
+                  top: -30%;
                 }
               }
             }

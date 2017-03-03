@@ -3,24 +3,24 @@
     <div class="reggio-emilia-title">
         <div class="center">
             <div class="reggio-emilia-title-photo"></div>
-            <span>Философия Reggio Emilia</span>
-            <span>Мы разделяем самую инновационную философию, которую международные эксперты признают лучшим методом
-            работы для дошкольного образования, которой восхищаются учителя и родители по всему миру, с
-            которой дети познают мир,  наслаждаясь детством.
-            </span>
+            <span><?= get_cat_name(9); ?></span>
+            <span><?= category_description(9); ?></span>
         </div>
     </div>
     <div class="reggio-emilia-training">
         <div class="center">
-            <p>Философия Реджио Эмилия  зародилась в 50-х годах прошлого века в городе на севере Италии Реджио Эмилия, в честь которого он и называется.
-                Вдохновитель подхода Лорис Малагуцци, директор образовательных программ Reggio Emilia опирался на идеи великих мыслителей в сфере
-                образования - Пиаже, Выготского, Монтессори, Штайнера, Дью и Брунера.
-            </p>
-            <p>Так появился педагогический подход, основные принципы и философия которого распространились по всему миру. В 1991 году изданием “Newsweek”
-                Рэджио-садики были признаны лучшими в мире. Рэджио-подход отмечен множеством международных наград и премий. Лучшие международные
-                частные образовательные учреждения работают на основе Рэджио-подхода.
-            </p>
+            <?php if ( have_posts() ) :  query_posts('cat=9’.’&order=ASC'.'&showposts=6');
+                while (have_posts()) : the_post();
+                    ?>
+                    <p><?php the_content();?></p>
+                    <?php
+                endwhile;
+            endif;
+            wp_reset_query();
+            ?>
             <div class="training-items">
+                <div class="pic-item1"></div>
+                <div class="pic-item2"></div>
                 <div class="training-items-head">
                     <span>Традиционное обучение</span>
                     <span>Обучение по Реджио-философии</span>
@@ -54,63 +54,26 @@
     </div>
     <div class="regqio-emilia-whale">
         <div class="center">
-            <span>7 китов Рэджио-философии</span>
-            <div class="whale-item">
-                <div class="whale-item-top">
-                    <span>1.</span>
-                    <span>Образ ребенка</span>
-                </div>
-                <p>Рэджио-педагоги верят в неограниченный потенциал ребенка и его безграничное желание взаимодействовать с миром и привносить свой вклад.
-                    Reggio Emilia  - это место для совместных опытов и открытый.<a href=""> Читать дальше>></a></p>
-            </div>
-            <div class="whale-item">
-                <div class="whale-item-top">
-                    <span>2.</span>
-                    <span>Образ ребенка</span>
-                </div>
-                <p>Рэджио-педагоги верят в неограниченный потенциал ребенка и его безграничное желание взаимодействовать с миром и привносить свой вклад.
-                    Reggio Emilia  - это место для совместных опытов и открытый.<a href=""> Читать дальше>></a></p>
-            </div>
-            <div class="whale-item">
-                <div class="whale-item-top">
-                    <span>3.</span>
-                    <span>Образ ребенка</span>
-                </div>
-                <p>Рэджио-педагоги верят в неограниченный потенциал ребенка и его безграничное желание взаимодействовать с миром и привносить свой вклад.
-                    Reggio Emilia  - это место для совместных опытов и открытый.<a href=""> Читать дальше>></a></p>
-            </div>
-            <div class="whale-item">
-                <div class="whale-item-top">
-                    <span>4.</span>
-                    <span>Образ ребенка</span>
-                </div>
-                <p>Рэджио-педагоги верят в неограниченный потенциал ребенка и его безграничное желание взаимодействовать с миром и привносить свой вклад.
-                    Reggio Emilia  - это место для совместных опытов и открытый.<a href=""> Читать дальше>></a></p>
-            </div>
-            <div class="whale-item">
-                <div class="whale-item-top">
-                    <span>5.</span>
-                    <span>Образ ребенка</span>
-                </div>
-                <p>Рэджио-педагоги верят в неограниченный потенциал ребенка и его безграничное желание взаимодействовать с миром и привносить свой вклад.
-                    Reggio Emilia  - это место для совместных опытов и открытый.<a href=""> Читать дальше>></a></p>
-            </div>
-            <div class="whale-item">
-                <div class="whale-item-top">
-                    <span>6.</span>
-                    <span>Образ ребенка</span>
-                </div>
-                <p>Рэджио-педагоги верят в неограниченный потенциал ребенка и его безграничное желание взаимодействовать с миром и привносить свой вклад.
-                    Reggio Emilia  - это место для совместных опытов и открытый.<a href=""> Читать дальше>></a></p>
-            </div>
-            <div class="whale-item">
-                <div class="whale-item-top">
-                    <span>7.</span>
-                    <span>Образ ребенка</span>
-                </div>
-                <p>Рэджио-педагоги верят в неограниченный потенциал ребенка и его безграничное желание взаимодействовать с миром и привносить свой вклад.
-                    Reggio Emilia  - это место для совместных опытов и открытый.<a href=""> Читать дальше>></a></p>
-            </div>
+            <div class="pic-item1"></div>
+            <span><?= get_cat_name(8); ?></span>
+
+            <?php if ( have_posts() ) :  query_posts('cat=8’.’&order=ASC'.'&showposts=7');
+                $count = 1;
+                while (have_posts()) : the_post();
+                    ?>
+                    <div class="whale-item">
+                        <div class="whale-item-top">
+                            <span><?= $count ?>.</span>
+                            <span><?php the_title(); ?></span>
+                        </div>
+                        <p><?php the_content(); ?><a href=""> Читать дальше>></a></p>
+                    </div>
+                    <?php
+                $count++;
+                endwhile;
+            endif;
+            wp_reset_query();
+            ?>
         </div>
     </div>
 </main>
