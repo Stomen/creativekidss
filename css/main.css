@@ -53,21 +53,46 @@
   margin: 0 12px;
   cursor: pointer;
   color: #606060;
+  transition: 0.5s;
+  white-space: nowrap;
 }
 .wrapper header .center nav ul li a:hover {
   color: #eb9921;
+  transition: 0.5s;
 }
 .wrapper header .center nav ul li ul {
   position: absolute;
-  width: 200px;
   display: none;
+  background: white;
+  box-shadow: 0 0 5px 2px #f4f4f4;
+  margin: 13px;
+  transition: 0.5s;
+  text-align: right;
+  right: 0;
+  top: 15px;
+  z-index: 1;
+  padding-top: 18px;
 }
 .wrapper header .center nav ul li ul:hover {
   display: block;
 }
 .wrapper header .center nav ul li ul li {
   display: block;
-  margin-top: 20px;
+  margin-bottom: 18px;
+}
+.wrapper header .center nav ul li ul:before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 15px;
+  display: block;
+  background: transparent;
+  right: 0;
+  top: -15px;
+  z-index: 2;
+}
+.wrapper header .center nav ul li ul:before:hover ul {
+  display: block;
 }
 .wrapper header .center nav ul li:first-child:hover ul {
   display: block;
@@ -125,6 +150,7 @@
   display: flex;
   flex-direction: row;
   width: inherit;
+  box-shadow: 0px 11px 20px 0px #f7f7f7;
 }
 .wrapper main .request-buttons span {
   font-family: OpenSans-Light;
@@ -135,7 +161,7 @@
   width: 100%;
   text-align: center;
   line-height: 1.5;
-  padding: 13px 0 18px 0;
+  padding: 16px 0 18px 0;
   color: white;
 }
 .wrapper main .request-buttons .request-link {
@@ -143,9 +169,11 @@
   height: 100%;
   border: 2px dashed transparent;
   cursor: pointer;
+  transition: 0.5s;
 }
 .wrapper main .request-buttons .request-link:hover {
   border: 2px dashed white;
+  transition: 0.5s;
 }
 .wrapper main .request-buttons .request-link1 {
   background: #d14d51;
@@ -166,7 +194,7 @@
   margin-left: 20%;
 }
 .wrapper main .our-principles {
-  box-shadow: inset 0 20px 20px 1px #f7f7f7;
+  box-shadow: inset 0px -11px 20px 0 #f7f7f7;
   padding-bottom: 20px;
 }
 .wrapper main .our-principles .center {
@@ -208,7 +236,9 @@
   margin-top: 20px;
 }
 .wrapper main .mission {
-  box-shadow: 0px -11px 20px 0px #f7f7f7;
+  background: white;
+  position: relative;
+  z-index: 5;
 }
 .wrapper main .mission .center {
   position: relative;
@@ -265,6 +295,26 @@
 .wrapper main .photo-gallery .center {
   text-align: center;
   position: relative;
+}
+.wrapper main .photo-gallery .center .gallery-pic1 {
+  position: absolute;
+  display: block;
+  content: "";
+  background: url("../assets/img/leaf2.png");
+  width: 58px;
+  height: 41px;
+  left: 34%;
+  top: 38%;
+}
+.wrapper main .photo-gallery .center .gallery-pic2 {
+  position: absolute;
+  display: block;
+  content: "";
+  background: url("../assets/img/leaf3.png");
+  width: 84px;
+  height: 58px;
+  right: 2%;
+  bottom: 23%;
 }
 .wrapper main .photo-gallery .center span p {
   max-width: 970px;
@@ -339,9 +389,11 @@
   color: white;
   cursor: pointer;
   outline: none;
+  transition: 0.5s;
 }
 .wrapper main .photo-gallery .center button:hover {
   background: #eb8224;
+  transition: 0.5s;
 }
 .wrapper main .photo-gallery .center button.gallery-button {
   margin-top: 60px;
@@ -359,10 +411,11 @@
   max-width: 348px;
   height: 230px;
   background-size: contain;
-  margin: 20px auto 50px auto;
+  margin: 40px auto 50px auto;
 }
 .wrapper main .about-quote .center .about-quote-photo.yellow-bird {
   background: center center url("../assets/img/yellow-bird.png") no-repeat;
+  margin: 20px auto 50px auto;
 }
 .wrapper main .about-quote .center span {
   font-family: OpenSans-Light;
@@ -388,10 +441,14 @@
   padding-top: 70px;
 }
 .wrapper main .about-description .mail-pic {
-  background: url("../assets/img/envelope-animation.gif") no-repeat;
+  background: url("../assets/img/letter2.png") no-repeat;
   width: 198px;
   height: 160px;
   margin: 0 auto;
+}
+.wrapper main .about-description .mail-pic.mail-pic-animate {
+  animation: letter 1s ease;
+  animation-fill-mode: forwards;
 }
 .wrapper main .about-description .center {
   text-align: center;
@@ -453,7 +510,7 @@
 }
 .wrapper main .about-feedback .center form {
   width: 100%;
-  padding-top: 55px;
+  padding-top: 25px;
   position: relative;
 }
 .wrapper main .about-feedback .center form input {
@@ -487,9 +544,11 @@
   font-size: 1.8em;
   color: white;
   cursor: pointer;
+  transition: 0.5s;
 }
 .wrapper main .about-feedback .center form input[type="submit"]:hover {
   background: #eb8224;
+  transition: 0.5s;
 }
 .wrapper main .reggio-emilia-title {
   min-height: 50px;
@@ -747,6 +806,7 @@
   font-family: OpenSans-Light;
   font-size: 2.4em;
   padding-top: 5px;
+  margin-left: 5px;
 }
 .wrapper main .regqio-emilia-whale .center .whale-item p {
   font-family: OpenSans-Light;
@@ -783,9 +843,11 @@
   font-size: 1.6em;
   font-family: OpenSans-Semibold;
   color: #666666;
+  transition: 0.5s;
 }
 .wrapper footer .center nav ul li a:hover {
   color: #eb9921;
+  transition: 0.5s;
 }
 .wrapper footer .center .why-we {
   max-width: 330px;
@@ -848,34 +910,22 @@
 .wrapper footer .center .contact-us .content-us-socialnet a:first-child {
   background: url("../assets/img/facebook_1.png") no-repeat;
   background-size: contain;
+  transition: 0.5s;
 }
 .wrapper footer .center .contact-us .content-us-socialnet a:first-child:hover {
   background: url("../assets/img/facebook.png") no-repeat;
   background-size: contain;
+  transition: 0.5s;
 }
 .wrapper footer .center .contact-us .content-us-socialnet a:nth-child(2) {
   background: url("../assets/img/inst_1.png") no-repeat;
   background-size: contain;
+  transition: 0.5s;
 }
 .wrapper footer .center .contact-us .content-us-socialnet a:nth-child(2):hover {
   background: url("../assets/img/inst.png") no-repeat;
   background-size: contain;
-}
-.wrapper footer .center .contact-us .content-us-socialnet a:nth-child(3) {
-  background: url("../assets/img/pint_1.png") no-repeat;
-  background-size: contain;
-}
-.wrapper footer .center .contact-us .content-us-socialnet a:nth-child(3):hover {
-  background: url("../assets/img/pint.png") no-repeat;
-  background-size: contain;
-}
-.wrapper footer .center .contact-us .content-us-socialnet a:nth-child(4) {
-  background: url("../assets/img/youtube_1.png") no-repeat;
-  background-size: contain;
-}
-.wrapper footer .center .contact-us .content-us-socialnet a:nth-child(4):hover {
-  background: url("../assets/img/youtube.png") no-repeat;
-  background-size: contain;
+  transition: 0.5s;
 }
 .wrapper footer .center .contact-us form {
   padding-top: 5px;

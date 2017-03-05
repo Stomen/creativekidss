@@ -194,6 +194,17 @@
         }
       }
         main {
+          .request-buttons{
+            .request-link1{
+              a{
+                .request-link1{
+                  span{
+                    margin-top: 18px;
+                  }
+                }
+              }
+            }
+          }
           .reggio-emilia-training {
             .center {
               .training-items {
@@ -327,7 +338,7 @@
             .request-link1 {
               .request-link {
                 span {
-                  margin-right: 0;
+                  margin: 18px 0 0 0;
                 }
               }
             }
@@ -359,17 +370,22 @@
     body {
       .wrapper {
         main {
-          .our-principles {
+          .our-principles{
             .center {
-              &:before {
+              .fox{
                 position: absolute;
-                display: block;
+                display: none;
                 content: "";
                 background: url("../assets/img/fox.png");
-                width: 265px;
+                width: 354px;
                 height: 319px;
-                left: -235px;
+                left: -350px;
                 bottom: -18px;
+                z-index: 1;
+                &.fox-animate{
+                  display: block;
+                  animation: fox-up 2s 1 ease;
+                }
               }
               &:after {
                 position: absolute;

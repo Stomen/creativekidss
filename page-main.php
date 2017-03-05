@@ -39,6 +39,7 @@
 		</div>
 		<div class="our-principles">
 			<div class="center">
+				<div class="fox"></div>
 				<div class="title-block">
 					<span><?= get_cat_name(3); ?></span>
 				</div>
@@ -87,6 +88,8 @@
 		</div>
 		<div class="photo-gallery">
 			<div class="center">
+				<div class="gallery-pic1"></div>
+				<div class="gallery-pic2"></div>
 				<div class="title-block">
 					<span><?= get_cat_name(6); ?></span>
 				</div>

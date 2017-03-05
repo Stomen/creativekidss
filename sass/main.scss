@@ -51,22 +51,48 @@
               margin: 0 12px ;
               cursor: pointer;
               color: #606060;
+              transition: 0.5s;
+              white-space: nowrap;
               &:hover{
                 color: #eb9921 ;
+                transition: 0.5s;
               }
             }
             ul{
               position: absolute;
-              width: 200px ;
               display: none;
+              background: white;
+              box-shadow: 0 0 5px 2px rgba(244,244,244,1);
+              margin: 13px;
+              transition: 0.5s;
+              text-align: right;
+              right: 0;
+              top: 15px;
+              z-index: 1;
+              padding-top: 18px;
               &:hover{
                 display: block;
               }
               li{
                 display: block;
-                margin-top: 20px;
+                margin-bottom: 18px;
+              }
+              &:before{
+                position: absolute;
+                content: "";
+                width: 100%;
+                height: 15px;
+                display: block;
+                background: transparent;
+                right: 0;
+                top: -15px;
+                z-index: 2;
+                &:hover ul{
+                  display: block;
+                }
               }
             }
+
             &:first-child{
               &:hover ul{
                 display: block;
@@ -142,6 +168,7 @@
       display: flex;
       flex-direction: row;
       width: inherit;
+      box-shadow: 0px 11px 20px 0px rgba(247,247,247,1);
         span{
           font-family: OpenSans-Light;
           font-size: 2.1em;
@@ -151,7 +178,7 @@
           width: 100%;
           text-align: center;
           line-height: 1.5;
-          padding: 13px 0 18px 0;
+          padding: 16px 0 18px 0;
           color: white;
         }
       .request-link{
@@ -159,8 +186,10 @@
         height: 100%;
         border: 2px dashed transparent;
         cursor: pointer;
+        transition: 0.5s;
         &:hover{
           border: 2px dashed white;
+          transition: 0.5s;
         }
       }
       .request-link1{
@@ -183,7 +212,7 @@
       }
     }
     .our-principles{
-      box-shadow:inset 0 20px 20px 1px rgb(247,247,247);
+      box-shadow: inset 0px -11px 20px 0 rgba(247,247,247,1);
       padding-bottom: 20px;
       .center{
         position: relative;
@@ -225,7 +254,9 @@
       }
     }
     .mission{
-      box-shadow: 0px -11px 20px 0px rgba(247, 247, 247, 1);
+      background: white;
+      position: relative;
+      z-index: 5;
       .center{
         position: relative;
         p{
@@ -282,6 +313,26 @@
       .center{
         text-align: center;
         position: relative;
+        .gallery-pic1{
+          position: absolute;
+          display: block;
+          content: "";
+          background: url("../assets/img/leaf2.png");
+          width: 58px;
+          height: 41px;
+          left: 34%;
+          top: 38%;
+        }
+        .gallery-pic2{
+          position: absolute;
+          display: block;
+          content: "";
+          background: url("../assets/img/leaf3.png");
+          width: 84px;
+          height: 58px;
+          right: 2%;
+          bottom: 23%;
+        }
         span{
           p{
             max-width: 970px;
@@ -359,8 +410,10 @@
           color: white;
           cursor: pointer;
           outline: none;
+          transition: 0.5s;
           &:hover{
             background: #eb8224;
+            transition: 0.5s;
           }
           &.gallery-button{
             margin-top: 60px;
@@ -381,9 +434,10 @@
           max-width: 348px;
           height: 230px;
           background-size: contain;
-          margin: 20px auto 50px auto;
+          margin: 40px auto 50px auto;
           &.yellow-bird{
             background: center center url("../assets/img/yellow-bird.png") no-repeat;
+            margin: 20px auto 50px auto;
           }
         }
         span{
@@ -409,10 +463,14 @@
     }
     .about-description{
       .mail-pic{
-        background: url("../assets/img/envelope-animation.gif") no-repeat;
+        background: url("../assets/img/letter2.png") no-repeat;
         width: 198px;
         height: 160px;
         margin: 0 auto;
+        &.mail-pic-animate{
+          animation: letter 1s ease;
+          animation-fill-mode: forwards;
+        }
       }
       box-shadow:inset 0 20px 20px 1px rgb(247,247,247);
       padding-top: 70px;
@@ -478,7 +536,7 @@
         }
         form{
           width: 100%;
-          padding-top: 55px;
+          padding-top: 25px;
           position: relative;
           input{
             display: block;
@@ -510,8 +568,10 @@
               font-size: 1.8em;
               color: white;
               cursor: pointer;
+              transition: 0.5s;
               &:hover{
                 background: #eb8224;
+                transition: 0.5s;
               }
             }
           }
@@ -815,6 +875,7 @@
                 font-family: OpenSans-Light;
                 font-size: 2.4em;
                 padding-top: 5px;
+                margin-left: 5px;
               }
             }
           }
@@ -858,8 +919,10 @@
               font-size: 1.6em;
               font-family: OpenSans-Semibold;
               color: #666666;
+              transition: 0.5s;
               &:hover{
                 color: #eb9921 ;
+                transition: 0.5s;
               }
             }
           }
@@ -925,33 +988,21 @@
             &:first-child{
               background: url("../assets/img/facebook_1.png") no-repeat;
               background-size: contain;
+              transition: 0.5s;
               &:hover{
                 background: url("../assets/img/facebook.png") no-repeat;
                 background-size: contain;
+                transition: 0.5s;
               }
             }
             &:nth-child(2){
               background: url("../assets/img/inst_1.png") no-repeat;
               background-size: contain;
+              transition: 0.5s;
               &:hover{
                 background: url("../assets/img/inst.png") no-repeat;
                 background-size: contain;
-              }
-            }
-            &:nth-child(3){
-              background: url("../assets/img/pint_1.png") no-repeat;
-              background-size: contain;
-              &:hover{
-                background: url("../assets/img/pint.png") no-repeat;
-                background-size: contain;
-              }
-            }
-            &:nth-child(4){
-              background: url("../assets/img/youtube_1.png") no-repeat;
-              background-size: contain;
-              &:hover{
-                background: url("../assets/img/youtube.png") no-repeat;
-                background-size: contain;
+                transition: 0.5s;
               }
             }
           }

@@ -90,6 +90,9 @@
   html body .wrapper header .center .logo {
     margin-left: 5px;
   }
+  html body .wrapper main .request-buttons .request-link1 a .request-link1 span {
+    margin-top: 18px;
+  }
   html body .wrapper main .reggio-emilia-training .center .training-items .training-items-head {
     flex-wrap: nowrap;
     margin: 30px 0 40px 0;
@@ -168,7 +171,7 @@
     display: none;
   }
   html body .wrapper main .request-buttons .request-link1 .request-link span {
-    margin-right: 0;
+    margin: 18px 0 0 0;
   }
   html body .wrapper main .request-buttons .request-link2 .request-link span {
     margin-left: 0;
@@ -181,15 +184,20 @@
   }
 }
 @media screen and (min-width: 1440px) {
-  html body .wrapper main .our-principles .center:before {
+  html body .wrapper main .our-principles .center .fox {
     position: absolute;
-    display: block;
+    display: none;
     content: "";
     background: url("../assets/img/fox.png");
-    width: 265px;
+    width: 354px;
     height: 319px;
-    left: -235px;
+    left: -350px;
     bottom: -18px;
+    z-index: 1;
+  }
+  html body .wrapper main .our-principles .center .fox.fox-animate {
+    display: block;
+    animation: fox-up 2s 1 ease;
   }
   html body .wrapper main .our-principles .center:after {
     position: absolute;

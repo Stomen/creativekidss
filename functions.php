@@ -117,12 +117,16 @@ function creativekids_scripts() {
 	wp_enqueue_style('slick-css');
 	wp_register_style('slick-theme-css', get_template_directory_uri() . '/slick/slick/slick-theme.css');
 	wp_enqueue_style('slick-theme-css');
+	wp_register_style('my-animation-css', get_template_directory_uri() . '/css/animation.css');
+	wp_enqueue_style('my-animation-css');
 
 
-	wp_enqueue_script( 'creativekids-jquery', '//code.jquery.com/jquery-migrate-1.2.1.min.js', array(), '20151215', true );
+	wp_enqueue_script( 'creativekids-jquery', get_template_directory_uri() . '/js/jquery-3.1.1.min.js', array(), '20151215', true );
 	wp_enqueue_script( 'creativekids-jquery-migr', '//code.jquery.com/jquery-1.11.0.min.js', array(), '20151215', true );
 	wp_enqueue_script( 'creativekids-slick', get_template_directory_uri() . '/slick/slick/slick.min.js', array(), '20151215', true );
 	wp_enqueue_script( 'creativekids-slick-js', get_template_directory_uri() . '/js/slick_slider.js', array(), '20151215', true );
+	wp_enqueue_script( 'creativekids-js-animate', get_template_directory_uri() . '/js/animate.js', array(), '20151215', true );
+	wp_enqueue_script( 'creativekids-js-main', get_template_directory_uri() . '/js/main.js', array(), '20151215', true );
 
 
 	

@@ -1,0 +1,18 @@
+@keyframes fox-up {
+  from {
+    bottom: -335px;
+    opacity: 0;
+  }
+  to {
+    bottom: -18px;
+    opacity: 1;
+  }
+}
+@keyframes letter {
+  from {
+    background: url("../assets/img/letter2.png") no-repeat;
+  }
+  to {
+    background: url("../assets/img/letter1.png") no-repeat;
+  }
+}
